@@ -17,7 +17,7 @@ export type ProjectMedia = {
   src: string;
   alt: string;
   caption: string;
-  wide?: boolean;
+  aspect?: "portrait" | "wide" | "square";
 };
 
 export type Project = {
@@ -55,6 +55,22 @@ export const PROJECTS: Project[] = [
         alt: "Affiche boissons et snacks pour le distributeur de CrossFit Genum",
         caption: "Affiche destinée à être installée sur le distributeur",
       },
+      {
+        src: "/images/realisations/crossfit-genum-4.webp",
+        alt: "Collection de tanks personnalisés pour CrossFit Genum",
+        caption: "Présentation de la collection de tanks personnalisés",
+      },
+      {
+        src: "/images/realisations/crossfit-genum-5.webp",
+        alt: "Collection de t-shirts personnalisés pour CrossFit Genum",
+        caption: "Présentation de la collection de t-shirts personnalisés",
+      },
+      {
+        src: "/images/realisations/crossfit-genum-6.webp",
+        alt: "Logo créé pour CrossFit Genum",
+        caption: "Logo",
+        aspect: "square",
+      },
     ],
   },
   {
@@ -85,7 +101,7 @@ export const PROJECTS: Project[] = [
         src: "/images/realisations/genum-series-4.webp",
         alt: "Pancarte athlète des Genum Series avec les partenaires de l'événement",
         caption: "Pancarte athlète, déclinée en 200 exemplaires avec noms d'équipes et catégories",
-        wide: true,
+        aspect: "wide",
       },
     ],
   },
@@ -121,6 +137,29 @@ export const PROJECTS: Project[] = [
         src: "/images/realisations/course-des-moulins-3.webp",
         alt: "Affiche de la Course des Moulins à Foulayronnes avec le moulin en arrière-plan",
         caption: "Publication Instagram",
+      },
+    ],
+  },
+  {
+    slug: "pseaume-couverture",
+    name: "Pseaume Couverture",
+    sector: "Artisan couvreur-zingueur",
+    missions: "Identité de marque · site web · supports print",
+    categories: ["web", "print"],
+    description:
+      "Artisan couvreur-zingueur à Melun, expert en rénovation de toitures dans le respect des méthodes traditionnelles : une identité de marque complète, un site internet pour présenter son savoir-faire, et des supports terrain comme les bâches de chantier.",
+    media: [
+      {
+        src: "/images/realisations/pseaume-couverture-1.webp",
+        alt: "Carte de visite de Pseaume Couverture",
+        caption: "Carte de visite",
+        aspect: "wide",
+      },
+      {
+        src: "/images/realisations/pseaume-couverture-2.webp",
+        alt: "Signature email de Pseaume Couverture",
+        caption: "Signature email",
+        aspect: "wide",
       },
     ],
   },

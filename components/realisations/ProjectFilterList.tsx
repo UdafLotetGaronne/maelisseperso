@@ -93,7 +93,9 @@ export default function ProjectFilterList() {
                         key={item.src}
                         className={clsx(
                           "group/card relative [perspective:1000px]",
-                          item.wide ? "col-span-2 aspect-[5/2]" : "aspect-[4/5]",
+                          item.aspect === "wide" && "col-span-2 aspect-[5/2]",
+                          item.aspect === "square" && "aspect-square",
+                          (!item.aspect || item.aspect === "portrait") && "aspect-[4/5]",
                         )}
                       >
                         <div className="relative h-full w-full transition-transform duration-500 ease-[var(--ease-editorial)] [transform-style:preserve-3d] group-hover/card:[transform:rotateY(180deg)]">
