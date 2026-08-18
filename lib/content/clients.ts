@@ -36,4 +36,22 @@ export const CLIENTS: Client[] = [
     width: 1572,
     height: 1572,
   },
+  {
+    name: "Genum Series",
+    logo: "/images/clients/client-genum-series.png",
+    width: 82,
+    height: 49,
+  },
+  {
+    name: "Institut N.G.",
+    logo: "/images/clients/client-institut-ng.png",
+    width: 1324,
+    height: 504,
+  },
+  {
+    name: "AGiR",
+    logo: "/images/clients/client-agir.png",
+    width: 1024,
+    height: 1024,
+  },
 ];

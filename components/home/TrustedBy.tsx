@@ -14,7 +14,7 @@ export default function TrustedBy() {
         </Reveal>
 
         <Reveal delay={0.05}>
-          <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:justify-between sm:gap-x-8">
+          <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-14 gap-y-8 sm:justify-center sm:gap-x-16">
             {CLIENTS.map((client) => (
               <li key={client.name} className="flex items-center justify-center">
                 <Image
