@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Newsreader, Manrope } from "next/font/google";
 import { MotionConfig } from "framer-motion";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -7,10 +7,10 @@ import TrustedBy from "@/components/home/TrustedBy";
 import { SITE } from "@/lib/content/site";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const newsreader = Newsreader({
   variable: "--font-display",
   subsets: ["latin"],
-  axes: ["opsz", "SOFT", "WONK"],
+  axes: ["opsz"],
   style: ["normal", "italic"],
   display: "swap",
 });
@@ -79,7 +79,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={`${fraunces.variable} ${manrope.variable} h-full`}>
+    <html lang="fr" className={`${newsreader.variable} ${manrope.variable} h-full`}>
       <body className="flex min-h-full flex-col bg-cream-50 text-ink antialiased">
         <script
           type="application/ld+json"

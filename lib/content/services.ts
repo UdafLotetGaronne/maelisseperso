@@ -41,7 +41,7 @@ export const SERVICES: Service[] = [
     summary:
       "Stories, carrousels, campagnes, événements, partenariats : je crée des contenus visuels qui ont une vraie personnalité et qui rendent votre communication identifiable.",
     detail:
-      "Chaque univers de marque a ses propres codes. Je construis une direction graphique cohérente pour vous, puis je la décline sur tous les formats dont vous avez besoin, sans jamais appliquer un template générique.",
+      "Je ne pars pas d'un modèle déjà tout fait. Je crée chaque visuel en fonction de votre activité, de votre personnalité et de ce que vous voulez transmettre, pour que votre communication ait une vraie cohérence d'un support à l'autre.",
     bullets: [
       "Contenus Instagram et carrousels",
       "Campagnes visuelles et contenus promotionnels",
@@ -129,7 +129,7 @@ export const SERVICES: Service[] = [
     slug: "emailing",
     title: "Emailing",
     shortTitle: "Emailing",
-    hook: "Des emails qu'on ouvre, pas qu'on supprime.",
+    hook: "Le bon message, au bon moment.",
     summary:
       "Newsletters, campagnes promotionnelles, séquences automatisées ou emails de relance : je gère vos campagnes emailing de la conception au suivi des performances.",
     detail:

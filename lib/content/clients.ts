@@ -54,4 +54,10 @@ export const CLIENTS: Client[] = [
     width: 1024,
     height: 1024,
   },
+  {
+    name: "RCBB · Rugby Club Bon-Encontre Boé",
+    logo: "/images/clients/client-rcbb.png",
+    width: 294,
+    height: 316,
+  },
 ];
