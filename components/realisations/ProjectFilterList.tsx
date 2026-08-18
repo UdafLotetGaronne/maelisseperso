@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { clsx } from "clsx";
 import { PROJECT_CATEGORIES, PROJECTS, type ProjectCategory } from "@/lib/content/projects";
@@ -85,6 +86,24 @@ export default function ProjectFilterList() {
                 <p className="mt-5 max-w-xl pl-9 font-sans text-[15px] leading-relaxed text-green-950/70 sm:pl-[3.75rem]">
                   {project.description}
                 </p>
+                {project.media && project.media.length > 0 ? (
+                  <div className="mt-6 grid grid-cols-2 gap-3 pl-9 sm:max-w-2xl sm:grid-cols-3 sm:gap-4 sm:pl-[3.75rem]">
+                    {project.media.map((item) => (
+                      <div
+                        key={item.src}
+                        className="relative aspect-[4/5] overflow-hidden rounded-xl bg-green-950/5 shadow-[0_8px_24px_-12px_rgba(27,51,48,0.25)]"
+                      >
+                        <Image
+                          src={item.src}
+                          alt={item.alt}
+                          fill
+                          sizes="(min-width: 640px) 220px, 45vw"
+                          className="object-cover transition-transform duration-500 ease-[var(--ease-editorial)] group-hover:scale-105"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
               </div>
             </motion.div>
           ))}

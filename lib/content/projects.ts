@@ -13,6 +13,11 @@ export const PROJECT_CATEGORIES: { key: ProjectCategory; label: string }[] = [
   { key: "evenementiel", label: "Événementiel" },
 ];
 
+export type ProjectMedia = {
+  src: string;
+  alt: string;
+};
+
 export type Project = {
   slug: string;
   name: string;
@@ -20,6 +25,7 @@ export type Project = {
   missions: string;
   categories: ProjectCategory[];
   description: string;
+  media?: ProjectMedia[];
 };
 
 export const PROJECTS: Project[] = [
@@ -40,6 +46,16 @@ export const PROJECTS: Project[] = [
     categories: ["evenementiel", "print", "social-media"],
     description:
       "Une identité événementielle complète, la communication autour des partenaires et sponsors, et les supports print pour faire vivre l'événement avant, pendant et après.",
+    media: [
+      {
+        src: "/images/realisations/genum-series-1.webp",
+        alt: "Visuel partenaire des Genum Series pour Alba Recovery Drink",
+      },
+      {
+        src: "/images/realisations/genum-series-2.webp",
+        alt: "Présentation de la photographe et vidéaste des Genum Series",
+      },
+    ],
   },
   {
     slug: "institut-ng",
@@ -58,6 +74,20 @@ export const PROJECTS: Project[] = [
     categories: ["evenementiel", "social-media"],
     description:
       "L'accompagnement social media d'un événement sportif local, de l'annonce jusqu'au jour J.",
+    media: [
+      {
+        src: "/images/realisations/course-des-moulins-1.webp",
+        alt: "Affiche de la Course des Moulins avec le parcours et les distances",
+      },
+      {
+        src: "/images/realisations/course-des-moulins-2.webp",
+        alt: "Affiche du trail 20 km de la Course des Moulins, boucle de la Talives",
+      },
+      {
+        src: "/images/realisations/course-des-moulins-3.webp",
+        alt: "Affiche de la Course des Moulins à Foulayronnes avec le moulin en arrière-plan",
+      },
+    ],
   },
 ];
 
