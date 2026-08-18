@@ -28,6 +28,18 @@ const SOCIALS = [
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-graphite text-cream-50">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 z-0 flex justify-center overflow-hidden opacity-[0.08]"
+      >
+        <Image
+          src="/images/logo-mae-comunique.png"
+          alt=""
+          width={1832}
+          height={770}
+          className="mt-8 h-auto w-[85vw] max-w-[820px] sm:mt-14 sm:w-[46vw]"
+        />
+      </div>
       <Container className="relative z-10 pt-20 sm:pt-28">
         <div className="grid gap-16 border-b border-cream-50/15 pb-16 sm:pb-20 lg:grid-cols-[1.3fr_1fr_1fr] lg:gap-8">
           <div className="max-w-sm">
@@ -118,16 +130,6 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-
-      <div aria-hidden className="pointer-events-none relative z-0 -mb-6 flex justify-center overflow-hidden opacity-[0.1] sm:-mb-8">
-        <Image
-          src="/images/logo-mae-comunique.png"
-          alt=""
-          width={1832}
-          height={770}
-          className="h-auto w-[130vw] max-w-[1600px] sm:w-[70vw]"
-        />
-      </div>
     </footer>
   );
 }

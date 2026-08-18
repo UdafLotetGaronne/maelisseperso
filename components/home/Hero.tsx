@@ -40,7 +40,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-8 lg:mt-14 lg:grid lg:grid-cols-12 lg:items-end lg:gap-6">
+        <div className="mt-6 flex flex-col gap-8 lg:mt-8 lg:grid lg:grid-cols-12 lg:items-end lg:gap-6">
           <p className="w-full max-w-xl font-sans text-base leading-relaxed text-green-950/80 sm:text-lg lg:col-span-6">
             Stratégie, réseaux sociaux, création graphique, vidéo, web et print : votre
             communication pensée de A à Z, par une seule personne qui prend le temps de

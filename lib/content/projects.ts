@@ -16,6 +16,8 @@ export const PROJECT_CATEGORIES: { key: ProjectCategory; label: string }[] = [
 export type ProjectMedia = {
   src: string;
   alt: string;
+  caption: string;
+  wide?: boolean;
 };
 
 export type Project = {
@@ -37,6 +39,23 @@ export const PROJECTS: Project[] = [
     categories: ["social-media", "evenementiel"],
     description:
       "Une communication énergique et directe, au rythme de la salle : contenus social media réguliers et accompagnement des temps forts de la communauté.",
+    media: [
+      {
+        src: "/images/realisations/crossfit-genum-1.webp",
+        alt: "Publication Instagram Summer Pass pour CrossFit Genum",
+        caption: "Publication Instagram, destinée à être boostée en publicité payante",
+      },
+      {
+        src: "/images/realisations/crossfit-genum-2.webp",
+        alt: "Publication de rentrée pour CrossFit Genum",
+        caption: "Publication Instagram et Facebook",
+      },
+      {
+        src: "/images/realisations/crossfit-genum-3.webp",
+        alt: "Affiche boissons et snacks pour le distributeur de CrossFit Genum",
+        caption: "Affiche destinée à être installée sur le distributeur",
+      },
+    ],
   },
   {
     slug: "genum-series",
@@ -50,10 +69,23 @@ export const PROJECTS: Project[] = [
       {
         src: "/images/realisations/genum-series-1.webp",
         alt: "Visuel partenaire des Genum Series pour Alba Recovery Drink",
+        caption: "Publication Instagram",
       },
       {
         src: "/images/realisations/genum-series-2.webp",
         alt: "Présentation de la photographe et vidéaste des Genum Series",
+        caption: "Publication Instagram",
+      },
+      {
+        src: "/images/realisations/genum-series-3.webp",
+        alt: "Publication des athlètes Victor Laborie, Kévin Prisse et Antoine Eternot pour les Genum Series",
+        caption: "Publication Instagram",
+      },
+      {
+        src: "/images/realisations/genum-series-4.webp",
+        alt: "Pancarte athlète des Genum Series avec les partenaires de l'événement",
+        caption: "Pancarte athlète, déclinée en 200 exemplaires avec noms d'équipes et catégories",
+        wide: true,
       },
     ],
   },
@@ -78,14 +110,17 @@ export const PROJECTS: Project[] = [
       {
         src: "/images/realisations/course-des-moulins-1.webp",
         alt: "Affiche de la Course des Moulins avec le parcours et les distances",
+        caption: "Publication Instagram",
       },
       {
         src: "/images/realisations/course-des-moulins-2.webp",
         alt: "Affiche du trail 20 km de la Course des Moulins, boucle de la Talives",
+        caption: "Publication Instagram",
       },
       {
         src: "/images/realisations/course-des-moulins-3.webp",
         alt: "Affiche de la Course des Moulins à Foulayronnes avec le moulin en arrière-plan",
+        caption: "Publication Instagram",
       },
     ],
   },

@@ -91,15 +91,25 @@ export default function ProjectFilterList() {
                     {project.media.map((item) => (
                       <div
                         key={item.src}
-                        className="relative aspect-[4/5] overflow-hidden rounded-xl bg-green-950/5 shadow-[0_8px_24px_-12px_rgba(27,51,48,0.25)]"
+                        className={clsx(
+                          "group/card relative [perspective:1000px]",
+                          item.wide ? "col-span-2 aspect-[5/2]" : "aspect-[4/5]",
+                        )}
                       >
-                        <Image
-                          src={item.src}
-                          alt={item.alt}
-                          fill
-                          sizes="(min-width: 640px) 220px, 45vw"
-                          className="object-cover transition-transform duration-500 ease-[var(--ease-editorial)] group-hover:scale-105"
-                        />
+                        <div className="relative h-full w-full transition-transform duration-500 ease-[var(--ease-editorial)] [transform-style:preserve-3d] group-hover/card:[transform:rotateY(180deg)]">
+                          <div className="backface-hidden absolute inset-0 overflow-hidden rounded-xl bg-green-950/5 shadow-[0_8px_24px_-12px_rgba(27,51,48,0.25)]">
+                            <Image
+                              src={item.src}
+                              alt={item.alt}
+                              fill
+                              sizes="(min-width: 640px) 220px, 45vw"
+                              className="object-cover"
+                            />
+                          </div>
+                          <div className="backface-hidden absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl bg-graphite p-4 text-center [transform:rotateY(180deg)]">
+                            <p className="font-sans text-xs leading-relaxed text-cream-50">{item.caption}</p>
+                          </div>
+                        </div>
                       </div>
                     ))}
                   </div>
