@@ -8,7 +8,7 @@ const SOCIALS = [
   { label: "LinkedIn", href: CONTACT.linkedin },
   { label: "Facebook", href: CONTACT.facebook },
   { label: "TikTok", href: CONTACT.tiktok },
-];
+].filter((social) => social.href !== "#");
 
 export default function Footer() {
   return (
@@ -73,7 +73,10 @@ export default function Footer() {
                 {CONTACT.phone.startsWith("[") ? (
                   <span>{CONTACT.phone}</span>
                 ) : (
-                  <a href={`tel:${CONTACT.phone}`} className="transition-colors hover:text-cream-50">
+                  <a
+                    href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
+                    className="transition-colors hover:text-cream-50"
+                  >
                     {CONTACT.phone}
                   </a>
                 )}

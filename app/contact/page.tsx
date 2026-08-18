@@ -52,7 +52,18 @@ export default function ContactPage() {
                   </a>
                 </p>
               )}
-              {CONTACT.phone.startsWith("[") ? <p>{CONTACT.phone}</p> : <p>{CONTACT.phone}</p>}
+              {CONTACT.phone.startsWith("[") ? (
+                <p>{CONTACT.phone}</p>
+              ) : (
+                <p>
+                  <a
+                    href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
+                    className="underline decoration-rose-500 underline-offset-4"
+                  >
+                    {CONTACT.phone}
+                  </a>
+                </p>
+              )}
               <p>{CONTACT.address}</p>
             </Reveal>
           </div>

@@ -1,4 +1,5 @@
 import Hero from "@/components/home/Hero";
+import TrustedBy from "@/components/home/TrustedBy";
 import Possibilities from "@/components/home/Possibilities";
 import Positioning from "@/components/home/Positioning";
 import Portfolio from "@/components/home/Portfolio";
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <TrustedBy />
       <Possibilities />
       <Positioning />
       <Portfolio />

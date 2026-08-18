@@ -17,17 +17,17 @@ export const SITE = {
 } as const;
 
 export const CONTACT = {
-  email: "[email à compléter]",
-  phone: "[téléphone à compléter]",
+  email: "maecom.unique@gmail.com",
+  phone: "07 81 75 35 46",
   address: "Secteur d'Agen · Lot-et-Garonne (47)",
-  instagram: "#",
-  linkedin: "#",
+  instagram: "https://www.instagram.com/maecom.unique",
+  linkedin: "https://www.linkedin.com/in/ma%C3%ABlisse-le-berre",
   facebook: "#",
   tiktok: "#",
 } as const;
 
 export const LEGAL = {
-  siret: "[SIRET à compléter]",
+  siret: "993 067 909 00016",
   legalAddress: "[adresse légale à compléter]",
   host: "[hébergeur à compléter]",
   hostAddress: "[adresse hébergeur à compléter]",
