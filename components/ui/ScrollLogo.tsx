@@ -25,8 +25,8 @@ export default function ScrollLogo({ className, from = -80, to = 80 }: ScrollLog
         <Image
           src="/images/logo-mae-comunique.png"
           alt=""
-          width={1379}
-          height={541}
+          width={1832}
+          height={770}
           className="h-auto w-full opacity-[0.06]"
         />
       </motion.div>

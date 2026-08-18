@@ -19,8 +19,8 @@ export default function FloatingLogo() {
       <Image
         src="/images/logo-mae-comunique.png"
         alt=""
-        width={1379}
-        height={541}
+        width={1832}
+        height={770}
         className="h-auto w-full"
       />
     </motion.div>

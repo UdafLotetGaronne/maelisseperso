@@ -44,7 +44,7 @@ export default function AProposPage() {
               <h1 className="mt-6 text-balance font-display text-4xl font-medium leading-[1.05] text-green-950 sm:text-5xl lg:text-6xl">
                 Derrière Mae Com&rsquo;Unique,
                 <br />
-                il y a <span className="italic text-rose-900">Mae</span>.
+                il y a moi, <span className="italic text-rose-900">Maëlisse</span>.
               </h1>
             </Reveal>
             <Reveal delay={0.1} className="flex justify-center lg:col-span-5 lg:justify-end">
@@ -63,38 +63,48 @@ export default function AProposPage() {
         </Container>
       </section>
 
-      <section className="border-t border-green-950/10 py-16 sm:py-20">
+      <section className="relative border-t border-green-950/10 py-16 sm:py-20">
         <Container>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
-            <Reveal className="lg:col-span-7 lg:col-start-1">
-              <p className="text-pretty font-display text-2xl italic leading-snug text-rose-900 sm:text-3xl">
+            <Reveal className="relative lg:col-span-7 lg:col-start-1">
+              <span
+                aria-hidden
+                className="pointer-events-none absolute -left-2 -top-10 select-none font-display text-[8rem] italic leading-none text-rose-900/[0.12] sm:-top-14 sm:text-[10rem]"
+              >
+                &laquo;
+              </span>
+              <p className="relative text-pretty font-display text-2xl italic leading-snug text-rose-900 sm:text-3xl">
                 Je m&rsquo;appelle Maëlisse Le Berre, et Mae Com&rsquo;Unique, c&rsquo;est moi.
               </p>
-              <div className="mt-8 space-y-5 font-sans text-[17px] leading-relaxed text-green-950/80">
+              <div className="relative mt-8 space-y-5 font-sans text-[17px] leading-relaxed text-green-950/80">
                 <p>
-                  Pas d&rsquo;équipe, pas d&rsquo;intermédiaire : quand vous travaillez avec Mae
-                  Com&rsquo;Unique, vous travaillez avec moi, du premier échange jusqu&rsquo;à la
-                  livraison de vos contenus.
+                  Pas d&rsquo;équipe derrière Mae Com&rsquo;Unique : il y a simplement moi, Maëlisse.
+                  Et quand on travaille ensemble, c&rsquo;est donc avec moi que vous échangez du
+                  début à la fin.
                 </p>
                 <p>
-                  Ce que j&rsquo;aime avant tout, c&rsquo;est comprendre une activité en profondeur :
-                  son fonctionnement, ses clients, ce qui la rend différente. Je préfère passer
-                  du temps à comprendre plutôt que de récupérer un brief et produire du contenu
-                  au kilomètre.
+                  Avant de me lancer dans un projet, j&rsquo;aime vraiment comprendre ce que vous
+                  faites, comment vous travaillez, qui sont vos clients et surtout ce que vous
+                  avez envie de transmettre. Je ne veux pas simplement créer quelque chose
+                  parce qu&rsquo;il « faut publier ». J&rsquo;ai besoin que ce soit cohérent avec vous
+                  et avec votre activité.
                 </p>
                 <p>
-                  C&rsquo;est cette curiosité, plus que n&rsquo;importe quelle recette marketing, qui
-                  me permet de m&rsquo;adapter à des univers aussi différents qu&rsquo;un club de sport,
-                  un institut de bien-être ou un commerce de proximité.
+                  C&rsquo;est aussi ce que j&rsquo;aime dans mon métier : pouvoir passer d&rsquo;un
+                  univers à un autre, découvrir de nouvelles activités et trouver à chaque
+                  fois la bonne façon de communiquer. Je suis vraiment passionnée par ce que
+                  je fais, alors forcément, je m&rsquo;investis beaucoup dans chaque projet.
+                  J&rsquo;ai envie que le résultat vous plaise, mais aussi d&rsquo;être moi-même
+                  fière de ce que je vous propose.
                 </p>
                 <p>
-                  Sur le plan technique, je peux intervenir sur la stratégie, les réseaux
-                  sociaux, la création graphique, la vidéo, le web, le print, le SEO ou
-                  l&rsquo;emailing, seule ou en combinant plusieurs de ces compétences selon ce
-                  dont vous avez besoin.
+                  Réseaux sociaux, création graphique, vidéo et UGC, site internet, print,
+                  SEO, emailing&hellip; je peux vous accompagner sur un besoin précis ou
+                  prendre en charge plusieurs aspects de votre communication, selon vos
+                  besoins.
                 </p>
               </div>
-              <div className="mt-9">
+              <div className="relative mt-9">
                 <Button href="/contact" variant="primary">
                   Parlons de votre projet
                 </Button>

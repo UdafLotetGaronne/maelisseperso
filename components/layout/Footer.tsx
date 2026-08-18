@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { CONTACT, FOOTER_LEGAL_LINKS, NAV_LINKS, SITE } from "@/lib/content/site";
 import Container from "@/components/ui/Container";
 
@@ -118,12 +119,15 @@ export default function Footer() {
         </div>
       </Container>
 
-      <p
-        aria-hidden
-        className="pointer-events-none relative z-0 -mb-[0.11em] select-none whitespace-nowrap text-center font-display text-[22vw] italic leading-none text-cream-50/[0.08] sm:text-[16vw]"
-      >
-        unique.
-      </p>
+      <div aria-hidden className="pointer-events-none relative z-0 -mb-6 flex justify-center overflow-hidden opacity-[0.1] sm:-mb-8">
+        <Image
+          src="/images/logo-mae-comunique.png"
+          alt=""
+          width={1832}
+          height={770}
+          className="h-auto w-[130vw] max-w-[1600px] sm:w-[70vw]"
+        />
+      </div>
     </footer>
   );
 }

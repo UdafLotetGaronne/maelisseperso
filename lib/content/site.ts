@@ -19,7 +19,7 @@ export const SITE = {
 export const CONTACT = {
   email: "maecom.unique@gmail.com",
   phone: "07 81 75 35 46",
-  address: "Secteur d'Agen · Lot-et-Garonne (47)",
+  address: "Lot-et-Garonne (47) · à distance",
   instagram: "https://www.instagram.com/maecom.unique",
   linkedin: "https://www.linkedin.com/in/ma%C3%ABlisse-le-berre",
   facebook: "#",

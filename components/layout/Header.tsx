@@ -43,8 +43,8 @@ export default function Header() {
           <Image
             src="/images/logo-mae-comunique.png"
             alt="Mae Com'Unique"
-            width={1379}
-            height={541}
+            width={1832}
+            height={770}
             priority
             className={clsx(
               "h-auto w-auto transition-all duration-500 ease-[var(--ease-editorial)]",
