@@ -5,6 +5,7 @@ import Reveal from "@/components/ui/Reveal";
 import Button from "@/components/ui/Button";
 import OrganicFrame from "@/components/ui/OrganicFrame";
 import CTAFinal from "@/components/home/CTAFinal";
+import ScrollLogo from "@/components/ui/ScrollLogo";
 
 export const metadata: Metadata = {
   title: "À propos",
@@ -103,7 +104,8 @@ export default function AProposPage() {
         </Container>
       </section>
 
-      <section className="border-t border-green-950/10 bg-cream-100 py-16 sm:py-20 lg:py-24">
+      <section className="relative border-t border-green-950/10 bg-cream-100 py-16 sm:py-20 lg:py-24">
+        <ScrollLogo from={-50} to={50} />
         <Container>
           <Reveal>
             <SectionEyebrow label="Ce qui compte pour moi" />

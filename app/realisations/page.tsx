@@ -4,6 +4,7 @@ import SectionEyebrow from "@/components/ui/SectionEyebrow";
 import Reveal from "@/components/ui/Reveal";
 import ProjectFilterList from "@/components/realisations/ProjectFilterList";
 import CTAFinal from "@/components/home/CTAFinal";
+import ScrollLogo from "@/components/ui/ScrollLogo";
 
 export const metadata: Metadata = {
   title: "Réalisations",
@@ -24,14 +25,15 @@ const UNIVERSES = [
 export default function RealisationsPage() {
   return (
     <>
-      <section className="pb-16 pt-14 sm:pt-20 lg:pb-24">
+      <section className="relative pb-16 pt-14 sm:pt-20 lg:pb-24">
+        <ScrollLogo from={-50} to={50} />
         <Container>
           <Reveal>
             <SectionEyebrow label="Réalisations" />
             <h1 className="mt-6 max-w-3xl text-balance font-display text-4xl font-medium leading-[1.05] text-green-950 sm:text-5xl lg:text-6xl">
               Des univers différents, une même exigence.
             </h1>
-            <p className="mt-7 max-w-xl text-pretty font-sans text-lg leading-relaxed text-green-950/75">
+            <p className="mt-7 max-w-xl text-pretty font-sans text-base leading-relaxed text-green-950/75">
               Je ne plaque pas la même direction créative sur tous mes clients. Un club de
               sport n&rsquo;a pas la même énergie qu&rsquo;un institut d&rsquo;accompagnement. Et ça
               doit se voir.
@@ -44,7 +46,7 @@ export default function RealisationsPage() {
         <ProjectFilterList />
 
         <Reveal className="mt-20 border-t border-green-950/10 pt-12 sm:mt-24">
-          <p className="font-sans text-xs font-semibold uppercase tracking-[0.28em] text-green-700">
+          <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-green-700">
             Et aussi
           </p>
           <div className="mt-5 flex flex-wrap gap-x-3 gap-y-3">

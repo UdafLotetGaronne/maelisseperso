@@ -14,7 +14,7 @@ export default function SectionEyebrow({
   return (
     <div
       className={clsx(
-        "flex items-center gap-3 font-sans text-xs font-semibold uppercase tracking-[0.28em]",
+        "flex items-center gap-3 font-sans text-xs font-semibold uppercase tracking-[0.12em]",
         light ? "text-cream-100/70" : "text-green-700",
         className,
       )}

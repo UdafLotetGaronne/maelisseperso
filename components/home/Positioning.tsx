@@ -22,12 +22,12 @@ export default function Positioning() {
 
         <div className="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
           <Reveal delay={0.1} className="lg:col-span-7">
-            <p className="text-pretty font-sans text-lg leading-relaxed text-cream-100/85 sm:text-xl">
+            <p className="text-pretty font-sans text-base leading-relaxed text-cream-100/85">
               Chaque entreprise a son histoire, son ton, ses clients et ses objectifs. Ma
               communication commence donc toujours par comprendre votre univers, avant de
               réfléchir aux contenus.
             </p>
-            <p className="mt-6 text-pretty font-sans text-lg leading-relaxed text-cream-100/85 sm:text-xl">
+            <p className="mt-6 text-pretty font-sans text-base leading-relaxed text-cream-100/85">
               Il ne s&rsquo;agit pas d&rsquo;appliquer une recette. Il s&rsquo;agit d&rsquo;en créer une, la
               vôtre.
             </p>

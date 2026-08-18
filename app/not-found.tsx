@@ -10,7 +10,7 @@ export default function NotFound() {
         <h1 className="mx-auto mt-6 max-w-xl text-balance font-display text-3xl font-medium leading-tight text-green-950 sm:text-4xl">
           Cette page-là n&rsquo;existe pas. <span className="italic text-rose-900">Mais votre projet, oui.</span>
         </h1>
-        <p className="mx-auto mt-6 max-w-md font-sans text-lg text-green-950/70">
+        <p className="mx-auto mt-6 max-w-md font-sans text-base text-green-950/70">
           La page que vous cherchez a peut-être changé d&rsquo;adresse. Revenez à l&rsquo;accueil ou
           parlons directement de votre projet.
         </p>

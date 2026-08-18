@@ -4,6 +4,7 @@ import SectionEyebrow from "@/components/ui/SectionEyebrow";
 import Reveal from "@/components/ui/Reveal";
 import OrganicFrame from "@/components/ui/OrganicFrame";
 import ContactForm from "@/components/contact/ContactForm";
+import ScrollLogo from "@/components/ui/ScrollLogo";
 import { CONTACT } from "@/lib/content/site";
 
 export const metadata: Metadata = {
@@ -15,7 +16,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="pb-24 pt-14 sm:pb-32 sm:pt-20">
+    <section className="relative pb-24 pt-14 sm:pb-32 sm:pt-20">
+      <ScrollLogo from={-50} to={50} />
       <Container>
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-6">
@@ -24,13 +26,49 @@ export default function ContactPage() {
               <h1 className="mt-6 text-balance font-display text-4xl font-medium leading-[1.05] text-green-950 sm:text-5xl">
                 On parle de votre projet ?
               </h1>
-              <p className="mt-6 max-w-md text-pretty font-sans text-lg leading-relaxed text-green-950/75">
+              <p className="mt-6 max-w-md text-pretty font-sans text-base leading-relaxed text-green-950/75">
                 Un besoin précis ou toute votre communication à repenser : décrivez-moi votre
                 projet, je reviens vers vous rapidement.
               </p>
             </Reveal>
 
-            <Reveal delay={0.1} className="mt-10 hidden lg:block">
+            <Reveal delay={0.1} className="mt-10 space-y-6 border-t border-green-950/10 pt-8">
+              <div>
+                <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-green-700">
+                  Email
+                </p>
+                {CONTACT.email.startsWith("[") ? (
+                  <p className="mt-1.5 font-display text-2xl text-green-950 sm:text-3xl">{CONTACT.email}</p>
+                ) : (
+                  <a
+                    href={`mailto:${CONTACT.email}`}
+                    className="mt-1.5 inline-block font-display text-2xl text-green-950 underline decoration-rose-500 decoration-2 underline-offset-4 transition-colors hover:text-rose-900 sm:text-3xl"
+                  >
+                    {CONTACT.email}
+                  </a>
+                )}
+              </div>
+
+              <div>
+                <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-green-700">
+                  Téléphone
+                </p>
+                {CONTACT.phone.startsWith("[") ? (
+                  <p className="mt-1.5 font-display text-2xl text-green-950 sm:text-3xl">{CONTACT.phone}</p>
+                ) : (
+                  <a
+                    href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
+                    className="mt-1.5 inline-block font-display text-2xl text-green-950 underline decoration-rose-500 decoration-2 underline-offset-4 transition-colors hover:text-rose-900 sm:text-3xl"
+                  >
+                    {CONTACT.phone}
+                  </a>
+                )}
+              </div>
+
+              <p className="font-sans text-sm text-green-950/60">{CONTACT.address}</p>
+            </Reveal>
+
+            <Reveal delay={0.2} className="mt-10 hidden lg:block">
               <OrganicFrame
                 src="/images/mae-illustration-contact.jpg"
                 alt="Illustration de Maëlisse, casque sur les oreilles, saluant de la main devant son ordinateur"
@@ -38,33 +76,8 @@ export default function ContactPage() {
                 height={1506}
                 accent="rose"
                 sizes="(min-width: 1024px) 30vw, 0px"
-                className="w-full max-w-[280px]"
+                className="w-full max-w-[220px]"
               />
-            </Reveal>
-
-            <Reveal delay={0.15} className="mt-10 space-y-2 border-t border-green-950/10 pt-8 font-sans text-sm text-green-950/70">
-              {CONTACT.email.startsWith("[") ? (
-                <p>{CONTACT.email}</p>
-              ) : (
-                <p>
-                  <a href={`mailto:${CONTACT.email}`} className="underline decoration-rose-500 underline-offset-4">
-                    {CONTACT.email}
-                  </a>
-                </p>
-              )}
-              {CONTACT.phone.startsWith("[") ? (
-                <p>{CONTACT.phone}</p>
-              ) : (
-                <p>
-                  <a
-                    href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
-                    className="underline decoration-rose-500 underline-offset-4"
-                  >
-                    {CONTACT.phone}
-                  </a>
-                </p>
-              )}
-              <p>{CONTACT.address}</p>
             </Reveal>
           </div>
 

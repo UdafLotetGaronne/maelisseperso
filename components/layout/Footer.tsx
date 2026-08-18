@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.28em] text-cream-50/75">
+            <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-cream-50/75">
               Navigation
             </p>
             <ul className="mt-5 space-y-3">
@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.28em] text-cream-50/75">
+            <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-cream-50/75">
               Contact
             </p>
             <ul className="mt-5 space-y-3 font-sans text-[15px] text-cream-50">

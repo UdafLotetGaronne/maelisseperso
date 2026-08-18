@@ -8,7 +8,7 @@ export default function TrustedBy() {
   return (
     <section className="border-t border-green-950/10 bg-cream-100 py-12 sm:py-14">
       <Container>
-        <p className="text-center font-sans text-xs font-semibold uppercase tracking-[0.28em] text-green-700 sm:text-left">
+        <p className="text-center font-sans text-xs font-semibold uppercase tracking-[0.12em] text-green-700 sm:text-left">
           Ils me font confiance
         </p>
       </Container>

@@ -8,13 +8,15 @@ import { SERVICES } from "@/lib/content/services";
 import Container from "@/components/ui/Container";
 import SectionEyebrow from "@/components/ui/SectionEyebrow";
 import Reveal from "@/components/ui/Reveal";
+import ScrollLogo from "@/components/ui/ScrollLogo";
 
 export default function Possibilities() {
   const [active, setActive] = useState(0);
   const service = SERVICES[active];
 
   return (
-    <section className="border-t border-green-950/10 bg-cream-100 py-24 sm:py-28 lg:py-36">
+    <section className="relative border-t border-green-950/10 bg-cream-100 py-24 sm:py-28 lg:py-36">
+      <ScrollLogo from={60} to={-60} />
       <Container>
         <Reveal>
           <SectionEyebrow number="01" label="Ce que je fais" />

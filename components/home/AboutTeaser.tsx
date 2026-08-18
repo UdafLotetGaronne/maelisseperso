@@ -14,7 +14,7 @@ export default function AboutTeaser() {
             <h2 className="mt-6 text-balance font-display text-3xl font-medium leading-[1.05] text-green-950 sm:text-4xl">
               Derrière Mae Com&rsquo;Unique, il y a moi, Maëlisse.
             </h2>
-            <p className="mt-6 max-w-xl text-pretty font-sans text-lg leading-relaxed text-green-950/80">
+            <p className="mt-6 max-w-xl text-pretty font-sans text-base leading-relaxed text-green-950/80">
               Pas d&rsquo;intermédiaire : quand vous travaillez avec Mae Com&rsquo;Unique, c&rsquo;est
               avec moi que vous échangez du début à la fin. J&rsquo;aime prendre le temps de
               comprendre votre activité, votre univers et ce que vous avez envie de transmettre.

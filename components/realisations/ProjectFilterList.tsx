@@ -76,7 +76,7 @@ export default function ProjectFilterList() {
                     </h2>
                   </div>
                   <div className="flex flex-col gap-1 pl-9 sm:items-end sm:gap-1.5 sm:pl-0 sm:text-right">
-                    <span className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-green-700">
+                    <span className="font-sans text-xs font-semibold uppercase tracking-[0.1em] text-green-700">
                       {project.sector}
                     </span>
                     <span className="font-sans text-sm text-green-950/70">{project.missions}</span>

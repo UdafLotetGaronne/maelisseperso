@@ -2,10 +2,12 @@ import { PROCESS_STEPS } from "@/lib/content/process";
 import Container from "@/components/ui/Container";
 import SectionEyebrow from "@/components/ui/SectionEyebrow";
 import Reveal from "@/components/ui/Reveal";
+import ScrollLogo from "@/components/ui/ScrollLogo";
 
 export default function Process() {
   return (
-    <section className="border-t border-green-950/10 bg-cream-50 py-24 sm:py-28 lg:py-36">
+    <section className="relative border-t border-green-950/10 bg-cream-50 py-24 sm:py-28 lg:py-36">
+      <ScrollLogo from={-60} to={60} />
       <Container>
         <Reveal>
           <SectionEyebrow number="03" label="Comment ça se passe" />
