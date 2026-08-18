@@ -86,6 +86,25 @@ export default function ProjectFilterList() {
                 <p className="mt-5 max-w-xl pl-9 font-sans text-[15px] leading-relaxed text-green-950/70 sm:pl-[3.75rem]">
                   {project.description}
                 </p>
+                {project.website ? (
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group/link mt-4 inline-flex items-center gap-2 pl-9 font-sans text-sm font-semibold text-green-950 transition-colors hover:text-rose-900 sm:pl-[3.75rem]"
+                  >
+                    <span className="relative">
+                      Voir le site
+                      <span className="absolute -bottom-0.5 left-0 h-px w-full origin-left scale-x-100 bg-current transition-transform duration-300 ease-[var(--ease-editorial)] group-hover/link:scale-x-0" />
+                    </span>
+                    <span
+                      aria-hidden
+                      className="transition-transform duration-300 ease-[var(--ease-editorial)] group-hover/link:translate-x-1"
+                    >
+                      ↗
+                    </span>
+                  </a>
+                ) : null}
                 {project.media && project.media.length > 0 ? (
                   <div className="mt-6 grid grid-cols-2 gap-3 pl-9 sm:max-w-2xl sm:grid-cols-3 sm:gap-4 sm:pl-[3.75rem]">
                     {project.media.map((item) => (

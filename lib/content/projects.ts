@@ -28,6 +28,7 @@ export type Project = {
   categories: ProjectCategory[];
   description: string;
   media?: ProjectMedia[];
+  website?: string;
 };
 
 export const PROJECTS: Project[] = [
@@ -35,10 +36,11 @@ export const PROJECTS: Project[] = [
     slug: "crossfit-genum",
     name: "CrossFit Genum",
     sector: "Sport & coaching",
-    missions: "Social media · création · événementiel",
-    categories: ["social-media", "evenementiel"],
+    missions: "Social media · création · événementiel · site web",
+    categories: ["social-media", "evenementiel", "web"],
     description:
-      "Une communication énergique et directe, au rythme de la salle : contenus social media réguliers et accompagnement des temps forts de la communauté.",
+      "Une communication énergique et directe, au rythme de la salle : contenus social media réguliers et accompagnement des temps forts de la communauté. J'ai aussi créé le site internet de la salle.",
+    website: "https://www.crossfitgenum.com/",
     media: [
       {
         src: "/images/realisations/crossfit-genum-1.webp",
@@ -70,6 +72,26 @@ export const PROJECTS: Project[] = [
         alt: "Logo créé pour CrossFit Genum",
         caption: "Logo",
         aspect: "square",
+      },
+      {
+        src: "/images/realisations/crossfit-genum-7.webp",
+        alt: "Affiche des abonnements CrossFit Genum pour le comptoir",
+        caption: "Affiche pour le comptoir",
+      },
+      {
+        src: "/images/realisations/crossfit-genum-8.webp",
+        alt: "Slide d'un carrousel Instagram et Facebook pour CrossFit Genum : nouveautés de la rentrée",
+        caption: "Extrait d'un carrousel Instagram et Facebook, à retrouver en entier sur @crossfit_genum",
+      },
+      {
+        src: "/images/realisations/crossfit-genum-9.webp",
+        alt: "Slide d'un carrousel Instagram et Facebook pour CrossFit Genum : nouveaux créneaux Hyrox",
+        caption: "Extrait d'un carrousel Instagram et Facebook, à retrouver en entier sur @crossfit_genum",
+      },
+      {
+        src: "/images/realisations/crossfit-genum-10.webp",
+        alt: "Slide d'un carrousel Instagram et Facebook pour CrossFit Genum : Hyrox à thème",
+        caption: "Extrait d'un carrousel Instagram et Facebook, à retrouver en entier sur @crossfit_genum",
       },
     ],
   },
@@ -148,6 +170,7 @@ export const PROJECTS: Project[] = [
     categories: ["web", "print"],
     description:
       "Artisan couvreur-zingueur à Melun, expert en rénovation de toitures dans le respect des méthodes traditionnelles : une identité de marque complète, un site internet pour présenter son savoir-faire, et des supports terrain comme les bâches de chantier.",
+    website: "https://pseaumecouverture.com/",
     media: [
       {
         src: "/images/realisations/pseaume-couverture-1.webp",
@@ -162,6 +185,26 @@ export const PROJECTS: Project[] = [
         aspect: "wide",
       },
     ],
+  },
+  {
+    slug: "mane",
+    name: "Ma.né",
+    sector: "Site vitrine",
+    missions: "Architecture · développement back-end",
+    categories: ["web"],
+    description:
+      "La conception de l'architecture et du développement back-end du site de Ma.né. Les photos, les couleurs et l'identité visuelle sont signées par Ma.né elle-même.",
+    website: "https://manemariedupouy.com/",
+  },
+  {
+    slug: "charlotte-g",
+    name: "Charlotte.G",
+    sector: "Beauté & bien-être",
+    missions: "Site web",
+    categories: ["web"],
+    description:
+      "Le site internet de Charlotte, qui propose des press-on nails sur-mesure. Les photos et la charte graphique du site ne sont pas les miennes.",
+    website: "https://bycharlotteg.com/",
   },
 ];
 
