@@ -14,7 +14,7 @@ export default function PolitiqueConfidentialitePage() {
     <section className="py-20 sm:py-28">
       <Container className="max-w-3xl">
         <SectionEyebrow label="Vos données" />
-        <h1 className="mt-6 font-display text-4xl font-medium text-green-950 sm:text-5xl">
+        <h1 className="mt-6 font-display text-3xl font-medium text-green-950 sm:text-4xl">
           Politique de confidentialité
         </h1>
 

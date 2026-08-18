@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const VALUES = [
   {
     title: "Proximité",
-    text: "Vous échangez directement avec moi, à chaque étape — pas avec une équipe qui change.",
+    text: "Vous échangez directement avec moi, à chaque étape, pas avec une équipe qui change.",
   },
   {
     title: "Polyvalence",
@@ -40,7 +40,7 @@ export default function AProposPage() {
           <div className="grid grid-cols-1 items-end gap-12 lg:grid-cols-12 lg:gap-8">
             <Reveal className="lg:col-span-7">
               <SectionEyebrow label="À propos" />
-              <h1 className="mt-6 text-balance font-display text-5xl font-medium leading-[1.02] text-green-950 sm:text-6xl lg:text-7xl">
+              <h1 className="mt-6 text-balance font-display text-4xl font-medium leading-[1.05] text-green-950 sm:text-5xl lg:text-6xl">
                 Derrière Mae Com&rsquo;Unique,
                 <br />
                 il y a <span className="italic text-rose-900">Mae</span>.
@@ -89,7 +89,7 @@ export default function AProposPage() {
                 <p>
                   Sur le plan technique, je peux intervenir sur la stratégie, les réseaux
                   sociaux, la création graphique, la vidéo, le web, le print, le SEO ou
-                  l&rsquo;emailing — seule ou en combinant plusieurs de ces compétences selon ce
+                  l&rsquo;emailing, seule ou en combinant plusieurs de ces compétences selon ce
                   dont vous avez besoin.
                 </p>
               </div>

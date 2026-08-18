@@ -21,7 +21,7 @@ export default function ContactPage() {
           <div className="lg:col-span-6">
             <Reveal>
               <SectionEyebrow label="Contact" />
-              <h1 className="mt-6 text-balance font-display text-5xl font-medium leading-[1.02] text-green-950 sm:text-6xl">
+              <h1 className="mt-6 text-balance font-display text-4xl font-medium leading-[1.05] text-green-950 sm:text-5xl">
                 On parle de votre projet ?
               </h1>
               <p className="mt-6 max-w-md text-pretty font-sans text-lg leading-relaxed text-green-950/75">

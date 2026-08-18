@@ -18,7 +18,7 @@ export const SERVICES: Service[] = [
     shortTitle: "Social media",
     hook: "Chaque publication a un objectif, jamais juste « être présente ».",
     summary:
-      "Instagram, Facebook, LinkedIn, TikTok : je peux prendre en charge tout ou partie de votre présence sur les réseaux, de la stratégie jusqu'à la publication.",
+      "Instagram, Facebook, LinkedIn, TikTok : je peux prendre en charge tout ou une partie de votre présence sur les réseaux, de la stratégie jusqu'à la publication.",
     detail:
       "Je pars toujours de la stratégie avant de penser aux contenus : qui vous parlez, avec quel ton, avec quels objectifs. Ensuite seulement viennent le calendrier éditorial, les formats et les publications. Rien n'est publié pour remplir un calendrier.",
     bullets: [
@@ -37,9 +37,9 @@ export const SERVICES: Service[] = [
     slug: "creation-graphique",
     title: "Création de contenu & graphisme",
     shortTitle: "Création",
-    hook: "Des visuels qui vous ressemblent, pas un gabarit recyclé d'un client à l'autre.",
+    hook: "Pas de copier-coller. Pas de visuels interchangeables.",
     summary:
-      "Carrousels, stories, campagnes visuelles, contenus événementiels ou partenaires : je conçois les visuels qui portent votre communication au quotidien.",
+      "Stories, carrousels, campagnes, événements, partenariats : je crée des contenus visuels qui ont une vraie personnalité et qui rendent votre communication identifiable.",
     detail:
       "Chaque univers de marque a ses propres codes. Je construis une direction graphique cohérente pour vous, puis je la décline sur tous les formats dont vous avez besoin, sans jamais appliquer un template générique.",
     bullets: [
@@ -56,9 +56,9 @@ export const SERVICES: Service[] = [
     slug: "video",
     title: "Vidéo",
     shortTitle: "Vidéo",
-    hook: "Vous filmez vos rushs, je vous rends des vidéos prêtes à publier.",
+    hook: "Créer, filmer, monter.",
     summary:
-      "De l'idée de départ au montage final, j'accompagne la création de vos contenus vidéo — Reels, TikTok, Shorts — jusqu'au format vertical optimisé.",
+      "De l'idée au rendu final, je crée et monte vos contenus vidéo pour les réseaux sociaux : Reels, TikTok, Shorts, vidéos UGC… Je peux travailler à partir de vos rushs ou créer directement le contenu pour vous, toujours avec les codes de chaque plateforme et de votre univers.",
     detail:
       "Vous pouvez très bien vous concentrer sur le tournage et me transmettre les rushs : je m'occupe de la recherche de concept en amont si besoin, puis du montage, du sous-titrage, de l'habillage graphique et des miniatures.",
     bullets: [
@@ -74,7 +74,7 @@ export const SERVICES: Service[] = [
     slug: "web",
     title: "Création de sites internet",
     shortTitle: "Web",
-    hook: "Un site beau, clair, et surtout pensé pour ceux qui vont s'en servir.",
+    hook: "Un site qui donne envie d'aller plus loin.",
     summary:
       "Sites vitrines, landing pages, boutiques en ligne ou pages de vente : je conçois des sites sur WordPress, Shopify ou une autre solution adaptée à votre besoin.",
     detail:
@@ -147,7 +147,7 @@ export const SERVICES: Service[] = [
     slug: "strategie",
     title: "Stratégie de communication",
     shortTitle: "Stratégie",
-    hook: "Avant de créer, je comprends. C'est là que tout commence.",
+    hook: "Avant de créer, je comprends.",
     summary:
       "Positionnement, ligne éditoriale, choix des canaux, communication de lancement ou d'événement : je réfléchis à la stratégie autant qu'à l'exécution.",
     detail:

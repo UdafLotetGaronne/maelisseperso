@@ -8,9 +8,9 @@ import ServiceSection from "@/components/services/ServiceSection";
 import CTAFinal from "@/components/home/CTAFinal";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Prestations",
   description:
-    "Réseaux sociaux, création graphique, vidéo, web, print, SEO, emailing et stratégie : découvrez l'ensemble des services de Mae Com'Unique.",
+    "Réseaux sociaux, création graphique, vidéo, web, print, SEO, emailing et stratégie : découvrez l'ensemble des prestations de Mae Com'Unique.",
   alternates: { canonical: "/services" },
 };
 
@@ -20,13 +20,13 @@ export default function ServicesPage() {
       <section className="pb-16 pt-14 sm:pt-20 lg:pb-24">
         <Container>
           <Reveal>
-            <SectionEyebrow label="Services" />
-            <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-medium leading-[1.05] text-green-950 sm:text-6xl lg:text-7xl">
+            <SectionEyebrow label="Prestations" />
+            <h1 className="mt-6 max-w-3xl text-balance font-display text-4xl font-medium leading-[1.05] text-green-950 sm:text-5xl lg:text-6xl">
               Tout ce qui fait votre communication.
             </h1>
             <p className="mt-7 max-w-xl text-pretty font-sans text-lg leading-relaxed text-green-950/75">
               Huit domaines, une seule interlocutrice. Vous pouvez me confier un seul besoin
-              ponctuel ou l&rsquo;ensemble de votre communication — dans les deux cas, je prends
+              ponctuel ou l&rsquo;ensemble de votre communication : dans les deux cas, je prends
               le temps de comprendre votre univers avant de créer quoi que ce soit.
             </p>
           </Reveal>

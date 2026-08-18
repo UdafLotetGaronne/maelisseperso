@@ -9,11 +9,11 @@ export const SITE = {
   legalName: "Mae Com'Unique",
   baseline: "Votre communication. Mais vraiment la vôtre.",
   description:
-    "Mae Com'Unique accompagne les entreprises, indépendants, associations et commerces dans leur communication : réseaux sociaux, stratégie, création graphique, vidéo, web, print et emailing — pensés pour votre identité, pas une recette copiée-collée.",
+    "Mae Com'Unique accompagne les entreprises, indépendants, associations et commerces dans leur communication : réseaux sociaux, stratégie, création graphique, vidéo, web, print et emailing, pensés pour votre identité, pas une recette copiée-collée.",
   // Domaine à définir lors de la mise en ligne réelle du site.
   url: "https://www.mae-comunique-a-configurer.fr",
   locale: "fr_FR",
-  areaServed: "Agen, Lot-et-Garonne (47) — et à distance partout en France",
+  areaServed: "Agen, Lot-et-Garonne (47), et à distance partout en France",
 } as const;
 
 export const CONTACT = {
@@ -36,7 +36,7 @@ export const LEGAL = {
 
 export const NAV_LINKS = [
   { href: "/", label: "Accueil" },
-  { href: "/services", label: "Services" },
+  { href: "/services", label: "Prestations" },
   { href: "/realisations", label: "Réalisations" },
   { href: "/a-propos", label: "À propos" },
   { href: "/contact", label: "Contact" },

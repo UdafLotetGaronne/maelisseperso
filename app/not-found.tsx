@@ -7,7 +7,7 @@ export default function NotFound() {
     <section className="py-28 sm:py-36">
       <Container className="text-center">
         <SectionEyebrow label="Erreur 404" className="justify-center" />
-        <h1 className="mx-auto mt-6 max-w-xl text-balance font-display text-4xl font-medium leading-tight text-green-950 sm:text-5xl">
+        <h1 className="mx-auto mt-6 max-w-xl text-balance font-display text-3xl font-medium leading-tight text-green-950 sm:text-4xl">
           Cette page-là n&rsquo;existe pas. <span className="italic text-rose-900">Mais votre projet, oui.</span>
         </h1>
         <p className="mx-auto mt-6 max-w-md font-sans text-lg text-green-950/70">

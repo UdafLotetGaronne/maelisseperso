@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Fraunces, Manrope } from "next/font/google";
+import { MotionConfig } from "framer-motion";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import TrustedBy from "@/components/home/TrustedBy";
 import { SITE } from "@/lib/content/site";
 import "./globals.css";
 
@@ -22,7 +24,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — Communication stratégique, créative et humaine`,
+    default: `${SITE.name} · Communication stratégique, créative et humaine`,
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,
@@ -39,13 +41,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: SITE.locale,
     siteName: SITE.name,
-    title: `${SITE.name} — Communication stratégique, créative et humaine`,
+    title: `${SITE.name} · Communication stratégique, créative et humaine`,
     description: SITE.description,
     url: SITE.url,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — Communication stratégique, créative et humaine`,
+    title: `${SITE.name} · Communication stratégique, créative et humaine`,
     description: SITE.description,
   },
   alternates: {
@@ -89,11 +91,14 @@ export default function RootLayout({
         >
           Aller au contenu
         </a>
-        <Header />
-        <main id="contenu" className="flex-1">
-          {children}
-        </main>
-        <Footer />
+        <MotionConfig reducedMotion="user">
+          <Header />
+          <main id="contenu" className="flex-1">
+            {children}
+          </main>
+          <TrustedBy />
+          <Footer />
+        </MotionConfig>
       </body>
     </html>
   );

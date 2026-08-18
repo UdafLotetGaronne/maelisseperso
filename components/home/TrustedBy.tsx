@@ -1,34 +1,33 @@
 import Image from "next/image";
 import { CLIENTS } from "@/lib/content/clients";
 import Container from "@/components/ui/Container";
-import Reveal from "@/components/ui/Reveal";
 
 export default function TrustedBy() {
-  return (
-    <section className="border-t border-green-950/10 bg-cream-50 py-14 sm:py-16">
-      <Container>
-        <Reveal>
-          <p className="text-center font-sans text-xs font-semibold uppercase tracking-[0.28em] text-green-700 sm:text-left">
-            Ils me font confiance
-          </p>
-        </Reveal>
+  const track = [...CLIENTS, ...CLIENTS];
 
-        <Reveal delay={0.05}>
-          <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-14 gap-y-8 sm:justify-center sm:gap-x-16">
-            {CLIENTS.map((client) => (
-              <li key={client.name} className="flex items-center justify-center">
-                <Image
-                  src={client.logo}
-                  alt={client.name}
-                  width={client.width}
-                  height={client.height}
-                  className="h-11 w-auto object-contain opacity-80 transition-opacity duration-300 ease-[var(--ease-editorial)] hover:opacity-100 sm:h-14"
-                />
-              </li>
-            ))}
-          </ul>
-        </Reveal>
+  return (
+    <section className="border-t border-green-950/10 bg-cream-100 py-12 sm:py-14">
+      <Container>
+        <p className="text-center font-sans text-xs font-semibold uppercase tracking-[0.28em] text-green-700 sm:text-left">
+          Ils me font confiance
+        </p>
       </Container>
+
+      <div className="relative mt-7 flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+        <div className="flex w-max shrink-0 animate-marquee items-center gap-16 pr-16 motion-reduce:animate-none">
+          {track.map((client, i) => (
+            <div key={`${client.name}-${i}`} className="flex h-12 w-28 shrink-0 items-center justify-center">
+              <Image
+                src={client.logo}
+                alt={client.name}
+                width={client.width}
+                height={client.height}
+                className="h-auto max-h-12 w-auto max-w-28 object-contain opacity-80 transition-opacity duration-300 hover:opacity-100"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

@@ -23,7 +23,7 @@ export default function ProjectFilterList() {
           className={clsx(
             "rounded-full border px-4 py-2 font-sans text-sm font-medium transition-colors",
             filter === "tous"
-              ? "border-green-950 bg-green-950 text-cream-50"
+              ? "border-graphite bg-graphite text-cream-50"
               : "border-green-950/20 text-green-950/70 hover:border-green-950/50",
           )}
         >
@@ -38,7 +38,7 @@ export default function ProjectFilterList() {
             className={clsx(
               "rounded-full border px-4 py-2 font-sans text-sm font-medium transition-colors",
               filter === cat.key
-                ? "border-green-950 bg-green-950 text-cream-50"
+                ? "border-graphite bg-graphite text-cream-50"
                 : "border-green-950/20 text-green-950/70 hover:border-green-950/50",
             )}
           >
@@ -71,7 +71,7 @@ export default function ProjectFilterList() {
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
                   <div className="flex items-baseline gap-4 sm:gap-6">
                     <span className="font-display text-sm italic text-rose-900">{`0${index + 1}`}</span>
-                    <h2 className="font-display text-3xl font-medium text-green-950 sm:text-4xl lg:text-5xl">
+                    <h2 className="font-display text-2xl font-medium text-green-950 sm:text-3xl lg:text-4xl">
                       {project.name}
                     </h2>
                   </div>

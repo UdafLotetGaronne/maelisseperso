@@ -8,7 +8,7 @@ import CTAFinal from "@/components/home/CTAFinal";
 export const metadata: Metadata = {
   title: "Réalisations",
   description:
-    "Découvrez les univers accompagnés par Mae Com'Unique : sport, bien-être, événementiel et bien d'autres — chacun avec sa propre direction créative.",
+    "Découvrez les univers accompagnés par Mae Com'Unique : sport, bien-être, événementiel et bien d'autres, chacun avec sa propre direction créative.",
   alternates: { canonical: "/realisations" },
 };
 
@@ -28,12 +28,12 @@ export default function RealisationsPage() {
         <Container>
           <Reveal>
             <SectionEyebrow label="Réalisations" />
-            <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-medium leading-[1.05] text-green-950 sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 max-w-3xl text-balance font-display text-4xl font-medium leading-[1.05] text-green-950 sm:text-5xl lg:text-6xl">
               Des univers différents, une même exigence.
             </h1>
             <p className="mt-7 max-w-xl text-pretty font-sans text-lg leading-relaxed text-green-950/75">
               Je ne plaque pas la même direction créative sur tous mes clients. Un club de
-              sport n&rsquo;a pas la même énergie qu&rsquo;un institut d&rsquo;accompagnement — et ça
+              sport n&rsquo;a pas la même énergie qu&rsquo;un institut d&rsquo;accompagnement. Et ça
               doit se voir.
             </p>
           </Reveal>

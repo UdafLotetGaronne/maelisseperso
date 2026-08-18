@@ -3,7 +3,7 @@ export const PROCESS_STEPS = [
     number: "01",
     title: "On échange",
     description:
-      "Je découvre votre entreprise, votre univers, vos besoins et vos objectifs — avant de penser à quoi que ce soit d'autre.",
+      "Je découvre votre entreprise, votre univers, vos besoins et vos objectifs, avant de penser à quoi que ce soit d'autre.",
   },
   {
     number: "02",
@@ -27,7 +27,7 @@ export const PROCESS_STEPS = [
     number: "05",
     title: "Votre com' prend vie",
     description:
-      "Publication, mise en ligne, impression ou diffusion — votre communication devient concrète.",
+      "Publication, mise en ligne, impression ou diffusion : votre communication devient concrète.",
   },
 ] as const;
 

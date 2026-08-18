@@ -14,7 +14,7 @@ export default function MentionsLegalesPage() {
     <section className="py-20 sm:py-28">
       <Container className="max-w-3xl">
         <SectionEyebrow label="Informations légales" />
-        <h1 className="mt-6 font-display text-4xl font-medium text-green-950 sm:text-5xl">
+        <h1 className="mt-6 font-display text-3xl font-medium text-green-950 sm:text-4xl">
           Mentions légales
         </h1>
 
@@ -22,7 +22,7 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="font-display text-xl font-medium text-green-950">Éditrice du site</h2>
             <p className="mt-3">
-              {SITE.legalName} — {LEGAL.director}
+              {SITE.legalName}, {LEGAL.director}
               <br />
               SIRET : {LEGAL.siret}
               <br />

@@ -11,7 +11,7 @@ export default function Positioning() {
         </Reveal>
 
         <Reveal delay={0.05}>
-          <h2 className="mt-8 max-w-4xl text-balance font-display text-4xl font-medium leading-[1.08] sm:text-5xl lg:text-6xl">
+          <h2 className="mt-8 max-w-4xl text-balance font-display text-3xl font-medium leading-[1.08] sm:text-4xl lg:text-5xl">
             Pas une communication{" "}
             <span className="whitespace-nowrap italic line-through decoration-rose-500/70 decoration-4">
               copiée-collée

@@ -19,7 +19,7 @@ export const CLIENTS: Client[] = [
     height: 523,
   },
   {
-    name: "LMA — Libre de manger autrement",
+    name: "LMA · Libre de manger autrement",
     logo: "/images/clients/client-lma.png",
     width: 262,
     height: 313,

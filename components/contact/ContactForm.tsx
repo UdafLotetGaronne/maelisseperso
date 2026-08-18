@@ -50,7 +50,7 @@ export default function ContactForm() {
       <div className="border-l-2 border-green-700 py-6 pl-6">
         <p className="font-display text-2xl italic text-green-950">Message bien reçu.</p>
         <p className="mt-3 max-w-md font-sans text-[15px] leading-relaxed text-green-950/70">
-          Merci pour ces informations — je reviens vers vous rapidement pour qu&rsquo;on en
+          Merci pour ces informations, je reviens vers vous rapidement pour qu&rsquo;on en
           discute.
         </p>
       </div>
@@ -121,7 +121,7 @@ export default function ContactForm() {
           {NEEDS_OPTIONS.map((option) => (
             <label
               key={option}
-              className="cursor-pointer rounded-full border border-green-950/20 px-4 py-2 font-sans text-sm text-green-950/75 transition-colors has-[:checked]:border-green-950 has-[:checked]:bg-green-950 has-[:checked]:text-cream-50"
+              className="cursor-pointer rounded-full border border-green-950/20 px-4 py-2 font-sans text-sm text-green-950/75 transition-colors has-[:checked]:border-graphite has-[:checked]:bg-graphite has-[:checked]:text-cream-50"
             >
               <input type="radio" name="need" value={option} className="sr-only" />
               {option}
@@ -158,7 +158,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="group inline-flex items-center gap-2.5 rounded-full bg-green-950 px-8 py-4 font-sans text-sm font-semibold text-cream-50 transition-all duration-300 ease-[var(--ease-editorial)] hover:bg-rose-900 disabled:opacity-60"
+        className="group inline-flex items-center gap-2.5 rounded-full bg-graphite px-8 py-4 font-sans text-sm font-semibold text-cream-50 transition-all duration-300 ease-[var(--ease-editorial)] hover:bg-rose-900 disabled:opacity-60"
       >
         {status === "sending" ? "Envoi en cours…" : "Envoyer ma demande"}
         <span aria-hidden className="transition-transform duration-300 ease-[var(--ease-editorial)] group-hover:translate-x-1">

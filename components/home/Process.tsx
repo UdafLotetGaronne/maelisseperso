@@ -8,9 +8,9 @@ export default function Process() {
     <section className="border-t border-green-950/10 bg-cream-50 py-24 sm:py-28 lg:py-36">
       <Container>
         <Reveal>
-          <SectionEyebrow number="05" label="Comment ça se passe" />
-          <h2 className="mt-6 max-w-2xl text-balance font-display text-4xl font-medium leading-[1.05] text-green-950 sm:text-5xl lg:text-6xl">
-            Simple, humain, sans usine à gaz.
+          <SectionEyebrow number="03" label="Comment ça se passe" />
+          <h2 className="mt-6 max-w-2xl text-balance font-display text-3xl font-medium leading-[1.05] text-green-950 sm:text-4xl lg:text-5xl">
+            Simple, clair, efficace.
           </h2>
         </Reveal>
 
