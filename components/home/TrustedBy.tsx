@@ -22,6 +22,7 @@ export default function TrustedBy() {
                 alt={client.name}
                 fill
                 sizes="160px"
+                style={client.scale ? { transform: `scale(${client.scale})` } : undefined}
                 className="object-contain opacity-80 transition-opacity duration-300 hover:opacity-100"
               />
             </div>

@@ -3,6 +3,7 @@ export type Client = {
   logo: string;
   width: number;
   height: number;
+  scale?: number;
 };
 
 export const CLIENTS: Client[] = [
@@ -23,6 +24,7 @@ export const CLIENTS: Client[] = [
     logo: "/images/clients/client-lma.png",
     width: 262,
     height: 313,
+    scale: 1.35,
   },
   {
     name: "CrossFit Genum",

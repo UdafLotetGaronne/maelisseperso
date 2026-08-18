@@ -187,6 +187,44 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    slug: "lma",
+    name: "LMA",
+    sector: "Nutrition & coaching sportif",
+    missions: "Identité de marque · print · social media",
+    categories: ["print", "social-media"],
+    description:
+      "Aurore accompagne ses clients en nutrition, diététique et coaching sportif. J'ai créé son identité de marque (logo, carte de visite) et je l'accompagne sur ses contenus social media.",
+    media: [
+      {
+        src: "/images/realisations/lma-1.webp",
+        alt: "Carte de visite d'Aurore Le Manac'h pour LMA",
+        caption: "Carte de visite",
+        aspect: "wide",
+      },
+      {
+        src: "/images/realisations/lma-2.webp",
+        alt: "Logo créé pour LMA, Libre de manger autrement",
+        caption: "Logo",
+        aspect: "square",
+      },
+      {
+        src: "/images/realisations/lma-3.webp",
+        alt: "Publication Instagram et Facebook LMA sur les bienfaits de la pomme",
+        caption: "Publication Instagram et Facebook",
+      },
+      {
+        src: "/images/realisations/lma-4.webp",
+        alt: "Publication Instagram et Facebook LMA sur 4 aliments à intégrer au quotidien",
+        caption: "Publication Instagram et Facebook",
+      },
+      {
+        src: "/images/realisations/lma-5.webp",
+        alt: "Publication Instagram et Facebook LMA sur l'assiette équilibrée",
+        caption: "Publication Instagram et Facebook",
+      },
+    ],
+  },
+  {
     slug: "mane",
     name: "Ma.né",
     sector: "Site vitrine",
