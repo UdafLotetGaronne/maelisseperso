@@ -66,17 +66,11 @@ export default function AProposPage() {
       <section className="relative border-t border-green-950/10 py-16 sm:py-20">
         <Container>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
-            <Reveal className="relative lg:col-span-7 lg:col-start-1">
-              <span
-                aria-hidden
-                className="pointer-events-none absolute -left-2 -top-10 select-none font-display text-[8rem] italic leading-none text-rose-900/[0.12] sm:-top-14 sm:text-[10rem]"
-              >
-                &laquo;
-              </span>
-              <p className="relative text-pretty font-display text-2xl italic leading-snug text-rose-900 sm:text-3xl">
+            <Reveal className="lg:col-span-7 lg:col-start-1">
+              <p className="text-pretty font-display text-2xl italic leading-snug text-rose-900 sm:text-3xl">
                 Je m&rsquo;appelle Maëlisse Le Berre, et Mae Com&rsquo;Unique, c&rsquo;est moi.
               </p>
-              <div className="relative mt-8 space-y-5 font-sans text-[17px] leading-relaxed text-green-950/80">
+              <div className="mt-8 space-y-5 font-sans text-[17px] leading-relaxed text-green-950/80">
                 <p>
                   Pas d&rsquo;équipe derrière Mae Com&rsquo;Unique : il y a simplement moi, Maëlisse.
                   Et quand on travaille ensemble, c&rsquo;est donc avec moi que vous échangez du
@@ -104,10 +98,28 @@ export default function AProposPage() {
                   besoins.
                 </p>
               </div>
-              <div className="relative mt-9">
+              <div className="mt-9">
                 <Button href="/contact" variant="primary">
                   Parlons de votre projet
                 </Button>
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.15} className="relative hidden lg:col-span-5 lg:block">
+              <span
+                aria-hidden
+                className="pointer-events-none absolute -right-2 -top-6 select-none font-display text-[10rem] italic leading-none text-rose-900/[0.14]"
+              >
+                &raquo;
+              </span>
+              <div className="relative mt-24 rounded-[2rem] bg-cream-100 p-8">
+                <p className="text-pretty font-display text-2xl italic leading-snug text-green-950">
+                  Je ne crée jamais quelque chose juste pour «&nbsp;faire de la présence&nbsp;».
+                  Ça doit vous ressembler.
+                </p>
+                <p className="mt-5 font-sans text-xs font-semibold uppercase tracking-[0.12em] text-rose-900">
+                  — Maëlisse
+                </p>
               </div>
             </Reveal>
           </div>

@@ -111,6 +111,19 @@ export default function ProjectFilterList() {
                     </span>
                   </a>
                 ) : null}
+                {project.instagramHandle ? (
+                  <p className="mt-4 max-w-xl pl-9 font-sans text-sm text-green-950/70 sm:pl-[3.75rem]">
+                    Toutes les vidéos UGC sont les miennes, à retrouver sur{" "}
+                    <a
+                      href={`https://www.instagram.com/${project.instagramHandle.replace("@", "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-green-950 underline decoration-rose-500 decoration-2 underline-offset-4 transition-colors hover:text-rose-900"
+                    >
+                      Instagram {project.instagramHandle}
+                    </a>
+                  </p>
+                ) : null}
                 {project.media && project.media.length > 0 ? (
                   <div className="mt-6 grid grid-cols-2 gap-3 pl-9 sm:max-w-2xl sm:grid-cols-3 sm:gap-4 sm:pl-[3.75rem]">
                     {project.media.map((item) => {

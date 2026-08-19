@@ -16,6 +16,7 @@ type OrganicFrameProps = {
   accent?: "rose" | "green";
   priority?: boolean;
   sizes?: string;
+  imageScale?: number;
 };
 
 export default function OrganicFrame({
@@ -27,6 +28,7 @@ export default function OrganicFrame({
   accent = "rose",
   priority,
   sizes,
+  imageScale = 1,
 }: OrganicFrameProps) {
   const id = useId().replace(/[:]/g, "");
   const clipId = `blob-clip-${id}`;
@@ -50,7 +52,13 @@ export default function OrganicFrame({
         style={{ clipPath: `url(#${clipId})` }}
       />
 
-      <div className="relative overflow-hidden" style={{ clipPath: `url(#${clipId})` }}>
+      <div
+        className={clsx(
+          "relative overflow-hidden",
+          imageScale < 1 && (accent === "rose" ? "bg-rose-100" : "bg-green-100"),
+        )}
+        style={{ clipPath: `url(#${clipId})` }}
+      >
         <Image
           src={src}
           alt={alt}
@@ -59,6 +67,7 @@ export default function OrganicFrame({
           priority={priority}
           sizes={sizes}
           className="h-full w-full object-cover"
+          style={imageScale < 1 ? { transform: `scale(${imageScale})` } : undefined}
         />
       </div>
     </div>

@@ -30,6 +30,7 @@ export type Project = {
   description: string;
   media?: ProjectMedia[];
   website?: string;
+  instagramHandle?: string;
 };
 
 export const PROJECTS: Project[] = [
@@ -42,6 +43,7 @@ export const PROJECTS: Project[] = [
     description:
       "Une communication énergique et directe, au rythme de la salle : contenus social media réguliers et accompagnement des temps forts de la communauté. J'ai aussi créé le site internet de la salle.",
     website: "https://www.crossfitgenum.com/",
+    instagramHandle: "@crossfit_genum",
     media: [
       {
         src: "/images/realisations/crossfit-genum-1.webp",
@@ -95,6 +97,7 @@ export const PROJECTS: Project[] = [
     categories: ["evenementiel", "print", "social-media"],
     description:
       "Une identité événementielle complète, la communication autour des partenaires et sponsors, et les supports print pour faire vivre l'événement avant, pendant et après.",
+    instagramHandle: "@genumseries",
     media: [
       {
         src: "/images/realisations/genum-series-1.webp",
@@ -324,6 +327,7 @@ export const PROJECTS: Project[] = [
     description:
       "Le site internet de Charlotte, qui propose des press-on nails sur-mesure. Les photos et la charte graphique du site ne sont pas les miennes.",
     website: "https://bycharlotteg.com/",
+    instagramHandle: "@charlotte.gayraud",
     media: [
       {
         src: "/images/realisations/charlotte-g-1.webp",

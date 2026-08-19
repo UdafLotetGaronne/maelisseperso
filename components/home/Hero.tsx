@@ -10,7 +10,7 @@ export default function Hero() {
       <FloatingLogo />
       <Container className="relative">
         <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-green-700">
-          Mae Com&rsquo;Unique · Agen &amp; à distance
+          Mae Com&rsquo;Unique · Lot-et-Garonne (47) et à distance
         </p>
 
         <div className="mt-6 flex flex-col items-start gap-10 lg:mt-8 lg:grid lg:grid-cols-12">
@@ -31,8 +31,9 @@ export default function Hero() {
               height={500}
               accent="rose"
               priority
-              sizes="(min-width: 1024px) 28vw, 0px"
-              className="w-full max-w-[400px]"
+              sizes="(min-width: 1024px) 32vw, 0px"
+              className="w-full max-w-[500px]"
+              imageScale={0.8}
             />
             <span className="absolute -bottom-2 right-[6%] rotate-[-4deg] rounded-full bg-cream-50 px-4 py-2 font-display text-sm italic text-green-900 shadow-[0_8px_24px_-8px_rgba(27,51,48,0.25)]">
               c&rsquo;est moi, Maëlisse

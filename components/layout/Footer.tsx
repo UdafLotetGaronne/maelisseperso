@@ -107,6 +107,8 @@ export default function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 font-sans text-sm text-cream-50/90 transition-colors hover:text-cream-50"
                 >
                   {SOCIAL_ICONS[social.label]}
