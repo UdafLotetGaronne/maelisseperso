@@ -7,6 +7,7 @@ import OrganicFrame from "@/components/ui/OrganicFrame";
 import ServicesSideNav from "@/components/services/ServicesSideNav";
 import ServiceSection from "@/components/services/ServiceSection";
 import CTAFinal from "@/components/home/CTAFinal";
+import ScrollLogo from "@/components/ui/ScrollLogo";
 
 export const metadata: Metadata = {
   title: "Prestations",
@@ -47,18 +48,21 @@ export default function ServicesPage() {
         </Container>
       </section>
 
-      <Container>
-        <div className="grid grid-cols-1 gap-10 border-t border-green-950/10 pt-6 lg:grid-cols-12 lg:gap-16">
-          <div className="lg:col-span-3">
-            <ServicesSideNav />
+      <section className="relative">
+        <ScrollLogo from={-40} to={40} />
+        <Container>
+          <div className="grid grid-cols-1 gap-10 border-t border-green-950/10 pt-6 lg:grid-cols-12 lg:gap-16">
+            <div className="lg:col-span-3">
+              <ServicesSideNav />
+            </div>
+            <div className="lg:col-span-9">
+              {SERVICES.map((service) => (
+                <ServiceSection key={service.slug} service={service} />
+              ))}
+            </div>
           </div>
-          <div className="lg:col-span-9">
-            {SERVICES.map((service) => (
-              <ServiceSection key={service.slug} service={service} />
-            ))}
-          </div>
-        </div>
-      </Container>
+        </Container>
+      </section>
 
       <div className="mt-8">
         <CTAFinal />
