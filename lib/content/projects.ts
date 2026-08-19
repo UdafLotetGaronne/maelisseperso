@@ -134,6 +134,44 @@ export const PROJECTS: Project[] = [
     categories: ["social-media", "web"],
     description:
       "Une communication plus douce et pédagogique, à l'opposé de l'énergie d'une salle de sport : site web, référencement et emailing pour accompagner la relation client dans la durée.",
+    website: "https://nouveauxgenres.com/",
+    media: [
+      {
+        src: "/images/realisations/institut-ng-1.webp",
+        alt: "Carrousel Institut NG, extrait 1 sur 3, sur l'isolement",
+        caption: "Extrait d'un carrousel Facebook, LinkedIn et Instagram",
+        width: 1600,
+        height: 2000,
+      },
+      {
+        src: "/images/realisations/institut-ng-2.webp",
+        alt: "Carrousel Institut NG, extrait 2 sur 3, statistique 1 personne sur 6",
+        caption: "Extrait d'un carrousel Facebook, LinkedIn et Instagram",
+        width: 1600,
+        height: 2000,
+      },
+      {
+        src: "/images/realisations/institut-ng-3.webp",
+        alt: "Carrousel Institut NG, extrait 3 sur 3, statistique 1 personne sur 6 est concernée",
+        caption: "Extrait d'un carrousel Facebook, LinkedIn et Instagram",
+        width: 1600,
+        height: 2000,
+      },
+      {
+        src: "/images/realisations/institut-ng-4.webp",
+        alt: "Publication Institut NG sur la formation en relation d'aide",
+        caption: "Publication destinée au SEA (publicité payante)",
+        width: 1200,
+        height: 1200,
+      },
+      {
+        src: "/images/realisations/institut-ng-5.webp",
+        alt: "Miniature vidéo Institut NG, et si tout partait de toi",
+        caption: "Miniature pour vidéos LinkedIn, Facebook et Instagram",
+        width: 1125,
+        height: 2000,
+      },
+    ],
   },
   {
     slug: "course-des-moulins",
@@ -233,13 +271,6 @@ export const PROJECTS: Project[] = [
       {
         src: "/images/realisations/lma-5.webp",
         alt: "Publication Instagram et Facebook LMA sur l'assiette équilibrée",
-        caption: "Publication Instagram et Facebook",
-        width: 1080,
-        height: 1350,
-      },
-      {
-        src: "/images/realisations/lma-6.webp",
-        alt: "Publication Instagram et Facebook LMA sur les bienfaits du quinoa",
         caption: "Publication Instagram et Facebook",
         width: 1080,
         height: 1350,
