@@ -10,7 +10,7 @@ export const SITE = {
   baseline: "Votre communication. Mais vraiment la vôtre.",
   description:
     "Mae Com'Unique accompagne les entreprises, indépendants, associations et commerces dans leur communication : réseaux sociaux, stratégie, création graphique, vidéo, web, print et emailing, pensés pour votre identité, pas une recette copiée-collée.",
-  url: "https://maecomunique.fr",
+  url: "https://maecomunique.com",
   locale: "fr_FR",
   areaServed: "Agen, Lot-et-Garonne (47), et à distance partout en France",
 } as const;
