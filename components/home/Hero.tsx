@@ -13,9 +13,9 @@ export default function Hero() {
           Mae Com&rsquo;Unique · Lot-et-Garonne (47) et à distance
         </p>
 
-        <div className="mt-3 flex flex-col items-start gap-6 lg:mt-4 lg:grid lg:grid-cols-12 lg:items-start lg:gap-8">
+        <div className="mt-4 flex flex-col items-start gap-6 lg:mt-5 lg:grid lg:grid-cols-12 lg:items-start lg:gap-8">
           <div className="col-span-12 lg:col-span-8">
-            <h1 className="min-w-0 font-display text-[11vw] font-medium leading-[0.94] tracking-tight text-green-950 sm:text-[7.5vw] lg:text-[5.2vw]">
+            <h1 className="min-w-0 font-display text-[9vw] font-medium leading-[1.02] tracking-tight text-green-950 sm:text-[6.2vw] lg:text-[4.3vw]">
               Votre
               <br />
               communication.
@@ -24,13 +24,13 @@ export default function Hero() {
               <br className="max-[420px]:block hidden" /> la vôtre.
             </h1>
 
-            <p className="mt-3 w-full max-w-xl font-sans text-base leading-relaxed text-green-950/80 sm:text-lg lg:mt-4">
+            <p className="mt-4 w-full max-w-xl font-sans text-base leading-relaxed text-green-950/80 sm:text-lg lg:mt-5">
               Stratégie, réseaux sociaux, création graphique, vidéo, web et print : votre
               communication pensée de A à Z, par une seule personne qui prend le temps de
               comprendre votre univers.
             </p>
 
-            <div className="mt-5 flex flex-wrap items-center gap-5 lg:mt-6">
+            <div className="mt-6 flex flex-wrap items-center gap-5 lg:mt-7">
               <Button href="/contact" variant="primary">
                 Parlons de votre projet
               </Button>
