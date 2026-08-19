@@ -6,14 +6,14 @@ import FloatingLogo from "@/components/ui/FloatingLogo";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pb-16 pt-8 sm:pt-12 lg:pb-24 lg:pt-16">
+    <section className="relative overflow-hidden pb-10 pt-4 sm:pt-6 lg:pb-16 lg:pt-8">
       <FloatingLogo />
       <Container className="relative">
         <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-green-700">
           Mae Com&rsquo;Unique · Lot-et-Garonne (47) et à distance
         </p>
 
-        <div className="mt-6 flex flex-col items-start gap-10 lg:mt-8 lg:grid lg:grid-cols-12">
+        <div className="mt-4 flex flex-col items-start gap-6 lg:mt-5 lg:grid lg:grid-cols-12 lg:gap-8">
           <h1 className="col-span-12 min-w-0 font-display text-[11vw] font-medium leading-[0.94] tracking-tight text-green-950 sm:text-[7.5vw] lg:col-span-8 lg:text-[5.2vw]">
             Votre
             <br />
@@ -41,7 +41,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-6 flex flex-col gap-8 lg:mt-8 lg:grid lg:grid-cols-12 lg:items-end lg:gap-6">
+        <div className="mt-5 flex flex-col gap-5 lg:mt-6 lg:grid lg:grid-cols-12 lg:items-end lg:gap-6">
           <p className="w-full max-w-xl font-sans text-base leading-relaxed text-green-950/80 sm:text-lg lg:col-span-6">
             Stratégie, réseaux sociaux, création graphique, vidéo, web et print : votre
             communication pensée de A à Z, par une seule personne qui prend le temps de
@@ -59,7 +59,7 @@ export default function Hero() {
         </div>
       </Container>
 
-      <div className="mt-16 lg:mt-20">
+      <div className="mt-10 lg:mt-12">
         <WordMarquee />
       </div>
     </section>
