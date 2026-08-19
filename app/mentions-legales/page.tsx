@@ -14,13 +14,13 @@ export default function MentionsLegalesPage() {
     <section className="py-20 sm:py-28">
       <Container className="max-w-3xl">
         <SectionEyebrow label="Informations légales" />
-        <h1 className="mt-6 font-display text-3xl font-medium text-green-950 sm:text-4xl">
+        <h1 className="mt-6 font-display text-3xl font-medium text-title sm:text-4xl">
           Mentions légales
         </h1>
 
         <div className="mt-12 space-y-10 font-sans text-[15px] leading-relaxed text-green-950/80">
           <div>
-            <h2 className="font-display text-xl font-medium text-green-950">Éditrice du site</h2>
+            <h2 className="font-display text-xl font-medium text-title">Éditrice du site</h2>
             <p className="mt-3">
               {SITE.legalName}, {LEGAL.director}
               <br />
@@ -33,7 +33,7 @@ export default function MentionsLegalesPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-xl font-medium text-green-950">Hébergement</h2>
+            <h2 className="font-display text-xl font-medium text-title">Hébergement</h2>
             <p className="mt-3">
               {LEGAL.host}
               <br />
@@ -42,7 +42,7 @@ export default function MentionsLegalesPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-xl font-medium text-green-950">Propriété intellectuelle</h2>
+            <h2 className="font-display text-xl font-medium text-title">Propriété intellectuelle</h2>
             <p className="mt-3">
               L&rsquo;ensemble des contenus présents sur ce site (textes, visuels, identité
               graphique) est la propriété de {SITE.legalName}, sauf mention contraire, et ne
@@ -51,7 +51,7 @@ export default function MentionsLegalesPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-xl font-medium text-green-950">Directrice de la publication</h2>
+            <h2 className="font-display text-xl font-medium text-title">Directrice de la publication</h2>
             <p className="mt-3">{LEGAL.director}</p>
           </div>
         </div>

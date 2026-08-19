@@ -14,13 +14,13 @@ export default function PolitiqueConfidentialitePage() {
     <section className="py-20 sm:py-28">
       <Container className="max-w-3xl">
         <SectionEyebrow label="Vos données" />
-        <h1 className="mt-6 font-display text-3xl font-medium text-green-950 sm:text-4xl">
+        <h1 className="mt-6 font-display text-3xl font-medium text-title sm:text-4xl">
           Politique de confidentialité
         </h1>
 
         <div className="mt-12 space-y-10 font-sans text-[15px] leading-relaxed text-green-950/80">
           <div>
-            <h2 className="font-display text-xl font-medium text-green-950">Données collectées</h2>
+            <h2 className="font-display text-xl font-medium text-title">Données collectées</h2>
             <p className="mt-3">
               Le formulaire de contact de ce site collecte votre nom, le nom de votre
               entreprise, votre email, votre téléphone (facultatif), le type de besoin et le
@@ -30,7 +30,7 @@ export default function PolitiqueConfidentialitePage() {
           </div>
 
           <div>
-            <h2 className="font-display text-xl font-medium text-green-950">Conservation</h2>
+            <h2 className="font-display text-xl font-medium text-title">Conservation</h2>
             <p className="mt-3">
               Les données transmises via le formulaire de contact sont conservées le temps
               nécessaire au traitement de votre demande et à la relation commerciale qui peut
@@ -39,7 +39,7 @@ export default function PolitiqueConfidentialitePage() {
           </div>
 
           <div>
-            <h2 className="font-display text-xl font-medium text-green-950">Vos droits</h2>
+            <h2 className="font-display text-xl font-medium text-title">Vos droits</h2>
             <p className="mt-3">
               Conformément au Règlement Général sur la Protection des Données (RGPD), vous
               disposez d&rsquo;un droit d&rsquo;accès, de rectification et de suppression des
@@ -49,7 +49,7 @@ export default function PolitiqueConfidentialitePage() {
           </div>
 
           <div>
-            <h2 className="font-display text-xl font-medium text-green-950">Cookies</h2>
+            <h2 className="font-display text-xl font-medium text-title">Cookies</h2>
             <p className="mt-3">
               Ce site n&rsquo;utilise pas de cookies de suivi publicitaire. Seuls des cookies
               techniques, nécessaires à son bon fonctionnement, peuvent être déposés.

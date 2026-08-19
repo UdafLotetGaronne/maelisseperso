@@ -11,7 +11,7 @@ export default function AboutTeaser() {
         <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-12 lg:gap-12">
           <Reveal className="order-2 lg:order-1 lg:col-span-7">
             <SectionEyebrow number="04" label="À propos" />
-            <h2 className="mt-6 text-balance font-display text-3xl font-medium leading-[1.05] text-green-950 sm:text-4xl">
+            <h2 className="mt-6 text-balance font-display text-3xl font-medium leading-[1.05] text-title sm:text-4xl">
               Derrière Mae Com&rsquo;Unique, il y a moi, Maëlisse.
             </h2>
             <p className="mt-6 max-w-xl text-pretty font-sans text-base leading-relaxed text-green-950/80">

@@ -30,7 +30,7 @@ export default function RealisationsPage() {
         <Container>
           <Reveal>
             <SectionEyebrow label="Réalisations" />
-            <h1 className="mt-6 max-w-3xl text-balance font-display text-4xl font-medium leading-[1.05] text-green-950 sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 max-w-3xl text-balance font-display text-4xl font-medium leading-[1.05] text-title sm:text-5xl lg:text-6xl">
               Des univers différents, une même exigence.
             </h1>
             <p className="mt-7 max-w-xl text-pretty font-sans text-base leading-relaxed text-green-950/75">

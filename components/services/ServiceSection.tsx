@@ -11,7 +11,7 @@ export default function ServiceSection({ service }: { service: Service }) {
       <Reveal>
         <div className="flex items-baseline gap-4">
           <span className="font-display text-xl italic text-rose-900">{service.number}</span>
-          <h2 className="text-balance font-display text-2xl font-medium leading-tight text-green-950 sm:text-3xl">
+          <h2 className="text-balance font-display text-2xl font-medium leading-tight text-title sm:text-3xl">
             {service.title}
           </h2>
         </div>

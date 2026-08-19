@@ -31,6 +31,10 @@
   --color-graphite: #787573;
   --color-graphite-dark: #5f5c5a;
 
+  /* Titres et accents ajoutés sur demande cliente */
+  --color-title: #565453;
+  --color-forest: #274644;
+
   --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
   --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
 

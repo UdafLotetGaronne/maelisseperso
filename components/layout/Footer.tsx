@@ -27,16 +27,16 @@ const SOCIALS = [
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-graphite text-cream-50">
+    <footer className="relative overflow-hidden bg-forest text-cream-50">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 z-0 flex justify-center overflow-hidden opacity-[0.08]"
+        className="pointer-events-none absolute inset-x-0 top-0 z-0 flex justify-center overflow-hidden opacity-[0.14]"
       >
         <Image
-          src="/images/logo-mae-comunique.png"
+          src="/images/logo-footer-watermark.png"
           alt=""
-          width={1832}
-          height={770}
+          width={1817}
+          height={702}
           className="mt-8 h-auto w-[85vw] max-w-[820px] sm:mt-14 sm:w-[46vw]"
         />
       </div>

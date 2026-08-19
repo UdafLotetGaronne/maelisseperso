@@ -15,7 +15,7 @@ export default function Hero() {
 
         <div className="mt-4 flex flex-col items-start gap-6 lg:mt-5 lg:grid lg:grid-cols-12 lg:items-start lg:gap-8">
           <div className="col-span-12 lg:col-span-8">
-            <h1 className="min-w-0 font-display text-[9vw] font-medium leading-[1.02] tracking-tight text-green-950 sm:text-[6.2vw] lg:text-[4.3vw]">
+            <h1 className="min-w-0 font-display text-[9vw] font-medium leading-[1.02] tracking-tight text-title sm:text-[6.2vw] lg:text-[4.3vw]">
               Votre
               <br />
               communication.
@@ -46,7 +46,7 @@ export default function Hero() {
               alt="Illustration de Maëlisse, fondatrice de Mae Com'Unique, souriante devant son ordinateur"
               width={331}
               height={500}
-              accent="rose"
+              accent="mauve"
               priority
               sizes="(min-width: 1024px) 28vw, 0px"
               className="w-full max-w-[400px]"

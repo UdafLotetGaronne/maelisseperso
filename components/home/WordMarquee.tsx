@@ -9,10 +9,10 @@ export default function WordMarquee() {
       <div className="flex w-max shrink-0 animate-marquee items-center gap-14 pr-14 motion-reduce:animate-none">
         {[...WORDS, ...WORDS].map((word, i) => (
           <span key={i} className="flex items-center gap-14">
-            <span className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-green-950/45">
+            <span className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-green-900">
               {word}
             </span>
-            <span className="h-[3px] w-[3px] rounded-full bg-rose-500/70" />
+            <span className="h-[3px] w-[3px] rounded-full bg-rose-900" />
           </span>
         ))}
       </div>

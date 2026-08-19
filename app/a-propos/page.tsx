@@ -41,7 +41,7 @@ export default function AProposPage() {
           <div className="grid grid-cols-1 items-end gap-12 lg:grid-cols-12 lg:gap-8">
             <Reveal className="lg:col-span-7">
               <SectionEyebrow label="À propos" />
-              <h1 className="mt-6 text-balance font-display text-4xl font-medium leading-[1.05] text-green-950 sm:text-5xl lg:text-6xl">
+              <h1 className="mt-6 text-balance font-display text-4xl font-medium leading-[1.05] text-title sm:text-5xl lg:text-6xl">
                 Derrière Mae Com&rsquo;Unique,
                 <br />
                 il y a moi, <span className="italic text-rose-900">Maëlisse</span>.
@@ -135,7 +135,7 @@ export default function AProposPage() {
           <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2">
             {VALUES.map((value, index) => (
               <Reveal key={value.title} delay={index * 0.06} className="border-t border-green-950/15 pt-5">
-                <h2 className="font-display text-2xl font-medium text-green-950">{value.title}</h2>
+                <h2 className="font-display text-2xl font-medium text-title">{value.title}</h2>
                 <p className="mt-2 max-w-sm font-sans text-[15px] leading-relaxed text-green-950/70">
                   {value.text}
                 </p>

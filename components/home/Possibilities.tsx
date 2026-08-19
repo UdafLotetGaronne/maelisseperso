@@ -20,7 +20,7 @@ export default function Possibilities() {
       <Container>
         <Reveal>
           <SectionEyebrow number="01" label="Ce que je fais" />
-          <h2 className="mt-6 max-w-2xl text-balance font-display text-3xl font-medium leading-[1.05] text-green-950 sm:text-4xl lg:text-5xl">
+          <h2 className="mt-6 max-w-2xl text-balance font-display text-3xl font-medium leading-[1.05] text-title sm:text-4xl lg:text-5xl">
             Une seule com&rsquo;, plein de possibilités.
           </h2>
         </Reveal>

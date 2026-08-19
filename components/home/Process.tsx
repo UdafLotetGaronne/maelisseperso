@@ -11,7 +11,7 @@ export default function Process() {
       <Container>
         <Reveal>
           <SectionEyebrow number="03" label="Comment ça se passe" />
-          <h2 className="mt-6 max-w-2xl text-balance font-display text-3xl font-medium leading-[1.05] text-green-950 sm:text-4xl lg:text-5xl">
+          <h2 className="mt-6 max-w-2xl text-balance font-display text-3xl font-medium leading-[1.05] text-title sm:text-4xl lg:text-5xl">
             Simple, clair, efficace.
           </h2>
         </Reveal>
@@ -23,7 +23,7 @@ export default function Process() {
                 className={`border-t-2 pt-6 ${index % 2 === 0 ? "border-green-700" : "border-rose-500"}`}
               >
                 <span className="font-display text-2xl italic text-rose-900">{step.number}</span>
-                <h3 className="mt-3 font-display text-xl font-medium text-green-950">{step.title}</h3>
+                <h3 className="mt-3 font-display text-xl font-medium text-title">{step.title}</h3>
                 <p className="mt-3 max-w-[22ch] font-sans text-sm leading-relaxed text-green-950/70">
                   {step.description}
                 </p>

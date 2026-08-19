@@ -78,7 +78,7 @@ export default function ProjectFilterList() {
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
                   <div className="flex items-baseline gap-4 sm:gap-6">
                     <span className="font-display text-sm italic text-rose-900">{`0${index + 1}`}</span>
-                    <h2 className="font-display text-2xl font-medium text-green-950 sm:text-3xl lg:text-4xl">
+                    <h2 className="font-display text-2xl font-medium text-title sm:text-3xl lg:text-4xl">
                       {project.name}
                     </h2>
                   </div>
@@ -93,23 +93,22 @@ export default function ProjectFilterList() {
                   {project.description}
                 </p>
                 {project.website ? (
-                  <a
-                    href={project.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group/link mt-4 inline-flex items-center gap-2 pl-9 font-sans text-sm font-semibold text-green-950 transition-colors hover:text-rose-900 sm:pl-[3.75rem]"
-                  >
-                    <span className="relative">
-                      Voir le site
-                      <span className="absolute -bottom-0.5 left-0 h-px w-full origin-left scale-x-100 bg-current transition-transform duration-300 ease-[var(--ease-editorial)] group-hover/link:scale-x-0" />
-                    </span>
-                    <span
-                      aria-hidden
-                      className="transition-transform duration-300 ease-[var(--ease-editorial)] group-hover/link:translate-x-1"
+                  <div className="mt-4 flex max-w-2xl justify-end pl-9 sm:pl-[3.75rem]">
+                    <a
+                      href={project.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group/link inline-flex items-center gap-2 rounded-full bg-forest px-5 py-2.5 font-sans text-sm font-semibold text-cream-50 transition-colors hover:bg-green-950"
                     >
-                      ↗
-                    </span>
-                  </a>
+                      Voir le site
+                      <span
+                        aria-hidden
+                        className="transition-transform duration-300 ease-[var(--ease-editorial)] group-hover/link:translate-x-1"
+                      >
+                        ↗
+                      </span>
+                    </a>
+                  </div>
                 ) : null}
                 {project.instagramHandle ? (
                   <p className="mt-4 max-w-xl pl-9 font-sans text-sm text-green-950/70 sm:pl-[3.75rem]">

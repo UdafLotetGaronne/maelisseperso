@@ -62,7 +62,7 @@ export default function Header() {
                 href={link.href}
                 aria-current={active ? "page" : undefined}
                 className={clsx(
-                  "group relative font-sans text-sm font-medium tracking-wide transition-colors",
+                  "group relative font-sans text-sm font-bold tracking-wide transition-colors",
                   active ? "text-green-950" : "text-green-900/70 hover:text-green-950",
                 )}
               >
@@ -81,7 +81,7 @@ export default function Header() {
         <div className="hidden shrink-0 lg:block">
           <Link
             href="/contact"
-            className="group inline-flex items-center gap-2 rounded-full bg-graphite px-6 py-3 font-sans text-sm font-semibold text-cream-50 transition-all duration-300 ease-[var(--ease-editorial)] hover:bg-rose-900"
+            className="group inline-flex items-center gap-2 rounded-full bg-rose-700 px-6 py-3 font-sans text-sm font-semibold text-cream-50 transition-all duration-300 ease-[var(--ease-editorial)] hover:bg-rose-900"
           >
             Parlons de votre projet
             <span aria-hidden className="transition-transform duration-300 ease-[var(--ease-editorial)] group-hover:translate-x-1">

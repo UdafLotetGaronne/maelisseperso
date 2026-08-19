@@ -13,7 +13,7 @@ type OrganicFrameProps = {
   width: number;
   height: number;
   className?: string;
-  accent?: "rose" | "green";
+  accent?: "rose" | "green" | "mauve";
   priority?: boolean;
   sizes?: string;
   imageScale?: number;
@@ -47,7 +47,9 @@ export default function OrganicFrame({
         aria-hidden
         className={clsx(
           "absolute -inset-4 -z-10 sm:-inset-6",
-          accent === "rose" ? "bg-rose-300/70" : "bg-green-300/50",
+          accent === "rose" && "bg-rose-300/70",
+          accent === "green" && "bg-green-300/50",
+          accent === "mauve" && "bg-rose-700/60",
         )}
         style={{ clipPath: `url(#${clipId})` }}
       />
@@ -55,7 +57,8 @@ export default function OrganicFrame({
       <div
         className={clsx(
           "relative overflow-hidden",
-          imageScale < 1 && (accent === "rose" ? "bg-rose-100" : "bg-green-100"),
+          imageScale < 1 &&
+            (accent === "rose" ? "bg-rose-100" : accent === "mauve" ? "bg-rose-700/15" : "bg-green-100"),
         )}
         style={{ clipPath: `url(#${clipId})` }}
       >
