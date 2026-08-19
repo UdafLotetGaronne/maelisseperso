@@ -1,4 +1,6 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
+import { CONTACT } from "@/lib/content/site";
 
 type ContactPayload = {
   name?: string;
@@ -24,7 +26,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const { name, email, message } = data;
+  const { name, company, email, phone, need, message } = data;
 
   if (!name?.trim() || !email?.trim() || !message?.trim()) {
     return NextResponse.json({ error: "Merci de compléter les champs obligatoires." }, { status: 400 });
@@ -34,9 +36,40 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Adresse email invalide." }, { status: 400 });
   }
 
-  // L'envoi réel du message (email, CRM, etc.) doit être branché ici une
-  // fois un fournisseur choisi — aucune information d'envoi n'a été fournie.
-  console.info("Nouvelle demande de contact reçue :", { ...data, message: undefined });
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.error("RESEND_API_KEY manquante : impossible d'envoyer l'email de contact.");
+    return NextResponse.json(
+      { error: "L'envoi du formulaire n'est pas encore configuré. Merci de réessayer plus tard." },
+      { status: 500 },
+    );
+  }
+
+  const resend = new Resend(apiKey);
+
+  const { error } = await resend.emails.send({
+    from: "Mae Com'Unique <onboarding@resend.dev>",
+    to: CONTACT.email,
+    replyTo: email,
+    subject: `Nouvelle demande de contact — ${name}`,
+    text: [
+      `Nom : ${name}`,
+      company?.trim() ? `Entreprise : ${company}` : null,
+      `Email : ${email}`,
+      phone?.trim() ? `Téléphone : ${phone}` : null,
+      need?.trim() ? `Type de besoin : ${need}` : null,
+      "",
+      "Message :",
+      message,
+    ]
+      .filter((line) => line !== null)
+      .join("\n"),
+  });
+
+  if (error) {
+    console.error("Erreur d'envoi Resend :", error);
+    return NextResponse.json({ error: "Une erreur est survenue lors de l'envoi." }, { status: 500 });
+  }
 
   return NextResponse.json({ ok: true });
 }
