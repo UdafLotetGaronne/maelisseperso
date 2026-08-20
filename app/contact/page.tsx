@@ -38,13 +38,13 @@ export default function ContactPage() {
                   Email
                 </p>
                 {CONTACT.email.startsWith("[") ? (
-                  <p className="mt-2 inline-block rounded-lg bg-rose-100 px-3 py-1.5 font-sans text-base font-semibold text-title sm:text-lg">
+                  <p className="mt-2 inline-block rounded-lg bg-rose-700 px-3 py-1 font-sans text-sm font-semibold text-cream-50 sm:text-base">
                     {CONTACT.email}
                   </p>
                 ) : (
                   <a
                     href={`mailto:${CONTACT.email}`}
-                    className="mt-2 inline-block rounded-lg bg-rose-100 px-3 py-1.5 font-sans text-base font-semibold text-title transition-colors hover:bg-rose-200 sm:text-lg"
+                    className="mt-2 inline-block rounded-lg bg-rose-700 px-3 py-1 font-sans text-sm font-semibold text-cream-50 transition-colors hover:bg-rose-900 sm:text-base"
                   >
                     {CONTACT.email}
                   </a>
@@ -56,13 +56,13 @@ export default function ContactPage() {
                   Téléphone
                 </p>
                 {CONTACT.phone.startsWith("[") ? (
-                  <p className="mt-2 inline-block rounded-lg bg-rose-100 px-3 py-1.5 font-sans text-base font-semibold text-title sm:text-lg">
+                  <p className="mt-2 inline-block rounded-lg bg-rose-700 px-3 py-1 font-sans text-sm font-semibold text-cream-50 sm:text-base">
                     {CONTACT.phone}
                   </p>
                 ) : (
                   <a
                     href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
-                    className="mt-2 inline-block rounded-lg bg-rose-100 px-3 py-1.5 font-sans text-base font-semibold text-title transition-colors hover:bg-rose-200 sm:text-lg"
+                    className="mt-2 inline-block rounded-lg bg-rose-700 px-3 py-1 font-sans text-sm font-semibold text-cream-50 transition-colors hover:bg-rose-900 sm:text-base"
                   >
                     {CONTACT.phone}
                   </a>

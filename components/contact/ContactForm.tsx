@@ -158,7 +158,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="group inline-flex items-center gap-2.5 rounded-full bg-graphite px-8 py-4 font-sans text-sm font-semibold text-cream-50 transition-all duration-300 ease-[var(--ease-editorial)] hover:bg-rose-900 disabled:opacity-60"
+        className="group inline-flex items-center gap-2.5 rounded-full bg-rose-700 px-8 py-4 font-sans text-sm font-semibold text-cream-50 transition-all duration-300 ease-[var(--ease-editorial)] hover:bg-rose-900 disabled:opacity-60"
       >
         {status === "sending" ? "Envoi en cours…" : "Envoyer ma demande"}
         <span aria-hidden className="transition-transform duration-300 ease-[var(--ease-editorial)] group-hover:translate-x-1">

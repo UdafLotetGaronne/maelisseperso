@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const VALUES = [
   {
     title: "Proximité",
-    text: "Vous échangez directement avec moi, à chaque étape, pas avec une équipe qui change.",
+    text: "Vous échangez directement avec moi, à chaque étape, pas avec une équipe.",
   },
   {
     title: "Polyvalence",
@@ -114,11 +114,11 @@ export default function AProposPage() {
               </span>
               <div className="relative mt-24 rounded-[2rem] bg-cream-100 p-8">
                 <p className="text-pretty font-display text-2xl italic leading-snug text-title">
-                  Je ne crée jamais quelque chose juste pour «&nbsp;faire de la présence&nbsp;».
-                  Ça doit vous ressembler.
+                  Je peux avoir terminé&hellip; et tout recommencer parce que j&rsquo;ai une
+                  meilleure idée.
                 </p>
                 <p className="mt-5 font-sans text-xs font-semibold uppercase tracking-[0.12em] text-rose-900">
-                  — Maëlisse
+                  bref, ça c&rsquo;est moi
                 </p>
               </div>
             </Reveal>
