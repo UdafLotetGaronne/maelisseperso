@@ -32,9 +32,12 @@ export default function ServiceSection({ service }: { service: Service }) {
           </div>
 
           <div className="lg:col-span-6">
-            <ul className="grid grid-cols-1 gap-x-6 gap-y-2.5 rounded-2xl bg-cream-100 p-6 sm:grid-cols-2 sm:p-7">
+            <ul className="columns-1 gap-x-6 rounded-2xl bg-cream-100 p-6 sm:columns-2 sm:p-7">
               {service.bullets.map((bullet) => (
-                <li key={bullet} className="flex gap-2.5 font-sans text-sm leading-relaxed text-green-950/75">
+                <li
+                  key={bullet}
+                  className="mb-2.5 flex break-inside-avoid gap-2.5 font-sans text-sm leading-relaxed text-green-950/75"
+                >
                   <span aria-hidden className="mt-2 h-1 w-1 shrink-0 rounded-full bg-rose-500" />
                   {bullet}
                 </li>
