@@ -117,7 +117,7 @@ export default function ProjectFilterList() {
                       href={`https://www.instagram.com/${project.instagramHandle.replace("@", "")}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-semibold text-green-950 underline decoration-rose-500 decoration-2 underline-offset-4 transition-colors hover:text-rose-900"
+                      className="font-semibold text-title underline decoration-rose-500 decoration-2 underline-offset-4 transition-colors hover:text-rose-900"
                     >
                       Instagram {project.instagramHandle}
                     </a>

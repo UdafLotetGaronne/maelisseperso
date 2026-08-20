@@ -63,7 +63,7 @@ export default function Header() {
                 aria-current={active ? "page" : undefined}
                 className={clsx(
                   "group relative font-sans text-sm font-bold tracking-wide transition-colors",
-                  active ? "text-green-950" : "text-green-900/70 hover:text-green-950",
+                  active ? "text-title" : "text-green-900/70 hover:text-title",
                 )}
               >
                 {link.label}

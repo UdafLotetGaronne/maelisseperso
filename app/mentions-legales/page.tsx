@@ -26,8 +26,6 @@ export default function MentionsLegalesPage() {
               <br />
               SIRET : {LEGAL.siret}
               <br />
-              Adresse : {LEGAL.legalAddress}
-              <br />
               Email : {CONTACT.email}
             </p>
           </div>

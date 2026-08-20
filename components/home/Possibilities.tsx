@@ -37,7 +37,7 @@ export default function Possibilities() {
                     onClick={() => setActive(index)}
                     className={clsx(
                       "flex w-full items-baseline gap-4 py-4 text-left transition-colors sm:gap-6 sm:py-5",
-                      active === index ? "text-green-950" : "text-green-950/40 hover:text-green-950/70",
+                      active === index ? "text-title" : "text-green-950/40 hover:text-green-950/70",
                     )}
                   >
                     <span className="font-display text-base italic text-rose-900">{item.number}</span>
@@ -68,7 +68,7 @@ export default function Possibilities() {
                   </p>
                   <Link
                     href={`/services#${service.slug}`}
-                    className="mt-6 inline-flex items-center gap-2 font-sans text-sm font-semibold text-green-950 underline decoration-rose-500 decoration-2 underline-offset-4"
+                    className="mt-6 inline-flex items-center gap-2 font-sans text-sm font-semibold text-title underline decoration-rose-500 decoration-2 underline-offset-4"
                   >
                     En savoir plus
                   </Link>

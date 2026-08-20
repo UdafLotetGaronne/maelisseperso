@@ -27,9 +27,8 @@ export const CONTACT = {
 
 export const LEGAL = {
   siret: "993 067 909 00016",
-  legalAddress: "[adresse légale à compléter]",
-  host: "[hébergeur à compléter]",
-  hostAddress: "[adresse hébergeur à compléter]",
+  host: "Vercel Inc.",
+  hostAddress: "340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis",
   director: "Maëlisse Le Berre",
 } as const;
 

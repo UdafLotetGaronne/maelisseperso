@@ -5,7 +5,7 @@ import { clsx } from "clsx";
 import { NEEDS_OPTIONS } from "@/lib/content/process";
 
 const fieldClass =
-  "peer w-full border-0 border-b border-green-950/25 bg-transparent px-0 py-3 font-sans text-base text-green-950 placeholder-transparent outline-none transition-colors focus:border-green-950";
+  "peer w-full border-0 border-b border-green-950/25 bg-transparent px-0 py-3 font-sans text-base text-title placeholder-transparent outline-none transition-colors focus:border-green-950";
 
 const labelClass =
   "pointer-events-none absolute left-0 top-3 font-sans text-base text-green-950/50 transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-green-700 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs";
@@ -48,7 +48,7 @@ export default function ContactForm() {
   if (status === "success") {
     return (
       <div className="border-l-2 border-green-700 py-6 pl-6">
-        <p className="font-display text-2xl italic text-green-950">Message bien reçu.</p>
+        <p className="font-display text-2xl italic text-title">Message bien reçu.</p>
         <p className="mt-3 max-w-md font-sans text-[15px] leading-relaxed text-green-950/70">
           Merci pour ces informations, je reviens vers vous rapidement pour qu&rsquo;on en
           discute.
@@ -116,7 +116,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <p className="font-sans text-sm font-medium text-green-950">Type de besoin</p>
+        <p className="font-sans text-sm font-medium text-title">Type de besoin</p>
         <div className="mt-4 flex flex-wrap gap-2.5" role="radiogroup" aria-label="Type de besoin">
           {NEEDS_OPTIONS.map((option) => (
             <label

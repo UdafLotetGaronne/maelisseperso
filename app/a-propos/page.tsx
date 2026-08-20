@@ -113,7 +113,7 @@ export default function AProposPage() {
                 &raquo;
               </span>
               <div className="relative mt-24 rounded-[2rem] bg-cream-100 p-8">
-                <p className="text-pretty font-display text-2xl italic leading-snug text-green-950">
+                <p className="text-pretty font-display text-2xl italic leading-snug text-title">
                   Je ne crée jamais quelque chose juste pour «&nbsp;faire de la présence&nbsp;».
                   Ça doit vous ressembler.
                 </p>

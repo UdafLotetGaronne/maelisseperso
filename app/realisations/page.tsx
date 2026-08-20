@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Container from "@/components/ui/Container";
-import SectionEyebrow from "@/components/ui/SectionEyebrow";
 import Reveal from "@/components/ui/Reveal";
 import ProjectFilterList from "@/components/realisations/ProjectFilterList";
 import CTAFinal from "@/components/home/CTAFinal";
@@ -26,17 +25,21 @@ export default function RealisationsPage() {
   return (
     <>
       <section className="relative pb-16 pt-14 sm:pt-20 lg:pb-24">
-        <ScrollLogo from={-50} to={50} />
+        <ScrollLogo from={-50} to={50} logoClassName="w-[80vw] max-w-[1000px]" />
         <Container>
           <Reveal>
-            <SectionEyebrow label="Réalisations" />
+            <p className="font-sans text-sm font-bold uppercase tracking-[0.12em] text-green-700">
+              Réalisations
+            </p>
             <h1 className="mt-6 max-w-3xl text-balance font-display text-4xl font-medium leading-[1.05] text-title sm:text-5xl lg:text-6xl">
-              Des univers différents, une même exigence.
+              À chaque projet son univers.
             </h1>
             <p className="mt-7 max-w-xl text-pretty font-sans text-base leading-relaxed text-green-950/75">
-              Je ne plaque pas la même direction créative sur tous mes clients. Un club de
-              sport n&rsquo;a pas la même énergie qu&rsquo;un institut d&rsquo;accompagnement. Et ça
-              doit se voir.
+              Je m&rsquo;adapte à chaque client et à son activité. On ne communique pas de la
+              même façon pour une salle de sport, un institut ou une marque : chacun a son
+              identité, son public et sa façon de parler. Mon travail, c&rsquo;est justement
+              de comprendre tout ça pour créer une communication qui colle vraiment à votre
+              univers.
             </p>
           </Reveal>
         </Container>

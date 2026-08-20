@@ -14,7 +14,7 @@ export default function Button({ href, children, variant = "primary", className 
       <Link
         href={href}
         className={clsx(
-          "group inline-flex items-center gap-2 font-sans text-sm font-semibold text-green-950 transition-colors hover:text-rose-900",
+          "group inline-flex items-center gap-2 font-sans text-sm font-semibold text-title transition-colors hover:text-rose-900",
           className,
         )}
       >

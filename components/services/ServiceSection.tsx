@@ -25,7 +25,7 @@ export default function ServiceSection({ service }: { service: Service }) {
             <p className="font-sans text-[15px] leading-relaxed text-green-950/80">{service.summary}</p>
             <p className="mt-4 font-sans text-[15px] leading-relaxed text-green-950/70">{service.detail}</p>
             {service.note ? (
-              <p className="mt-6 border-l-2 border-rose-500 pl-4 font-display text-lg italic text-green-950">
+              <p className="mt-6 border-l-2 border-rose-500 pl-4 font-display text-lg italic text-title">
                 {service.note}
               </p>
             ) : null}
@@ -42,7 +42,7 @@ export default function ServiceSection({ service }: { service: Service }) {
             </ul>
             <Link
               href="/contact"
-              className="mt-7 inline-flex items-center gap-2 font-sans text-sm font-semibold text-green-950 underline decoration-rose-500 decoration-2 underline-offset-4"
+              className="mt-7 inline-flex items-center gap-2 font-sans text-sm font-semibold text-title underline decoration-rose-500 decoration-2 underline-offset-4"
             >
               Discuter de ce besoin →
             </Link>

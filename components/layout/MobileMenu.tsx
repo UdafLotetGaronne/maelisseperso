@@ -44,7 +44,7 @@ export default function MobileMenu({ open, pathname }: { open: boolean; pathname
           <div className="flex flex-col gap-6">
             <Link
               href="/contact"
-              className="inline-flex w-fit items-center gap-2 rounded-full bg-cream-50 px-7 py-3.5 font-sans text-sm font-semibold text-green-950"
+              className="inline-flex w-fit items-center gap-2 rounded-full bg-cream-50 px-7 py-3.5 font-sans text-sm font-semibold text-title"
             >
               Parlons de votre projet →
             </Link>

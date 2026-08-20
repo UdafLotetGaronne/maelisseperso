@@ -40,7 +40,7 @@ export default function ServicesSideNav() {
                 className={clsx(
                   "-ml-px flex items-baseline gap-3 border-l py-2 pl-5 font-sans text-sm transition-colors",
                   active
-                    ? "border-rose-700 font-semibold text-green-950"
+                    ? "border-rose-700 font-semibold text-title"
                     : "border-transparent text-green-950/45 hover:text-green-950/80",
                 )}
               >
