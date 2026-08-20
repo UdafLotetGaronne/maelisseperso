@@ -60,10 +60,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-cream-50/75">
-              Navigation
-            </p>
-            <ul className="mt-5 space-y-3">
+            <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="font-sans text-[15px] text-cream-50 transition-colors hover:text-cream-50/80">

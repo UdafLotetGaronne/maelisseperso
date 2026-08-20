@@ -16,9 +16,9 @@ export const SERVICES: Service[] = [
     slug: "social-media",
     title: "Réseaux sociaux & community management",
     shortTitle: "Social media",
-    hook: "Chaque publication a un objectif, jamais juste « être présente ».",
+    hook: "Imaginer, créer, publier.",
     summary:
-      "Instagram, Facebook, LinkedIn, TikTok : je peux prendre en charge tout ou une partie de votre présence sur les réseaux, de la stratégie jusqu'à la publication.",
+      "De l'idée au contenu publié, je m'occupe de vos réseaux sociaux : stratégie, calendrier éditorial, création des visuels, rédaction, programmation, stories… Je peux prendre en charge l'ensemble de vos réseaux ou simplement intervenir là où vous en avez besoin.",
     detail:
       "Je pars toujours de la stratégie avant de penser aux contenus : qui vous parlez, avec quel ton, avec quels objectifs. Ensuite seulement viennent le calendrier éditorial, les formats et les publications. Rien n'est publié pour remplir un calendrier.",
     bullets: [
@@ -37,7 +37,7 @@ export const SERVICES: Service[] = [
     slug: "creation-graphique",
     title: "Création de contenu & graphisme",
     shortTitle: "Création",
-    hook: "Pas de copier-coller. Pas de visuels interchangeables.",
+    hook: "Des visuels à votre image.",
     summary:
       "Stories, carrousels, campagnes, événements, partenariats : je crée des contenus visuels qui ont une vraie personnalité et qui rendent votre communication identifiable.",
     detail:
@@ -111,7 +111,7 @@ export const SERVICES: Service[] = [
     slug: "seo-redaction",
     title: "SEO & rédaction web",
     shortTitle: "SEO",
-    hook: "Être trouvée, pas juste être en ligne.",
+    hook: "Gagner en visibilité.",
     summary:
       "Rédaction d'articles, recherche de mots-clés, structure et optimisation : je travaille le référencement naturel de vos contenus sans sur-optimiser artificiellement les textes.",
     detail:

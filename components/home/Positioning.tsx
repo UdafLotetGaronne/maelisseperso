@@ -28,8 +28,8 @@ export default function Positioning() {
               réfléchir aux contenus.
             </p>
             <p className="mt-6 text-pretty font-sans text-base leading-relaxed text-cream-100/85">
-              Il ne s&rsquo;agit pas d&rsquo;appliquer une recette. Il s&rsquo;agit d&rsquo;en créer une, la
-              vôtre.
+              Il n&rsquo;y a pas de méthode qui fonctionne pour tout le monde, alors je
+              construis la vôtre en fonction de votre activité.
             </p>
           </Reveal>
 
