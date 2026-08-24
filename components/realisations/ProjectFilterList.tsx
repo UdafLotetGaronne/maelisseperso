@@ -1,19 +1,14 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Image from "next/image";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { clsx } from "clsx";
-import {
-  PROJECT_CATEGORIES,
-  PROJECTS,
-  type ProjectCategory,
-  type ProjectMedia,
-} from "@/lib/content/projects";
+import { PROJECT_CATEGORIES, PROJECTS, type ProjectCategory } from "@/lib/content/projects";
+import ProjectMediaGallery from "@/components/realisations/ProjectMediaGallery";
 
 export default function ProjectFilterList() {
   const [filter, setFilter] = useState<ProjectCategory | "tous">("tous");
-  const [lightbox, setLightbox] = useState<ProjectMedia | null>(null);
 
   const filtered = useMemo(
     () => (filter === "tous" ? PROJECTS : PROJECTS.filter((p) => p.categories.includes(filter))),
@@ -79,7 +74,12 @@ export default function ProjectFilterList() {
                   <div className="flex items-baseline gap-4 sm:gap-6">
                     <span className="font-display text-sm italic text-rose-900">{`0${index + 1}`}</span>
                     <h2 className="font-display text-2xl font-medium text-title sm:text-3xl lg:text-4xl">
-                      {project.name}
+                      <Link
+                        href={`/realisations/${project.slug}`}
+                        className="transition-colors hover:text-rose-900"
+                      >
+                        {project.name}
+                      </Link>
                     </h2>
                   </div>
                   <div className="flex flex-col gap-1 pl-9 sm:items-end sm:gap-1.5 sm:pl-0 sm:text-right">
@@ -124,40 +124,24 @@ export default function ProjectFilterList() {
                   </p>
                 ) : null}
                 {project.media && project.media.length > 0 ? (
-                  <div className="mt-6 grid grid-cols-2 gap-3 pl-9 sm:max-w-2xl sm:grid-cols-3 sm:gap-4 sm:pl-[3.75rem]">
-                    {project.media.map((item) => {
-                      const isWide = item.width / item.height > 1.3;
-                      return (
-                        <button
-                          key={item.src}
-                          type="button"
-                          onClick={() => setLightbox(item)}
-                          aria-label={`Agrandir : ${item.alt}`}
-                          className={clsx(
-                            "group/card relative cursor-zoom-in [perspective:1000px]",
-                            isWide && "col-span-2",
-                          )}
-                          style={{ aspectRatio: `${item.width} / ${item.height}` }}
-                        >
-                          <div className="relative h-full w-full transition-transform duration-500 ease-[var(--ease-editorial)] [transform-style:preserve-3d] group-hover/card:[transform:rotateY(180deg)]">
-                            <div className="backface-hidden absolute inset-0 overflow-hidden rounded-xl bg-green-950/5 shadow-[0_8px_24px_-12px_rgba(27,51,48,0.25)]">
-                              <Image
-                                src={item.src}
-                                alt={item.alt}
-                                fill
-                                sizes="(min-width: 640px) 220px, 45vw"
-                                className="object-cover"
-                              />
-                            </div>
-                            <div className="backface-hidden absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl bg-graphite p-4 text-center [transform:rotateY(180deg)]">
-                              <p className="font-sans text-xs leading-relaxed text-cream-50">{item.caption}</p>
-                            </div>
-                          </div>
-                        </button>
-                      );
-                    })}
+                  <div className="mt-6 pl-9 sm:pl-[3.75rem]">
+                    <ProjectMediaGallery media={project.media} />
                   </div>
                 ) : null}
+                <div className="mt-5 pl-9 sm:pl-[3.75rem]">
+                  <Link
+                    href={`/realisations/${project.slug}`}
+                    className="group/link inline-flex items-center gap-2 font-sans text-sm font-semibold text-title transition-colors hover:text-rose-900"
+                  >
+                    Voir la page du projet
+                    <span
+                      aria-hidden
+                      className="transition-transform duration-300 ease-[var(--ease-editorial)] group-hover/link:translate-x-1"
+                    >
+                      →
+                    </span>
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -169,48 +153,6 @@ export default function ProjectFilterList() {
           </p>
         ) : null}
       </div>
-
-      <AnimatePresence>
-        {lightbox ? (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-graphite/95 p-4 sm:p-8"
-            onClick={() => setLightbox(null)}
-          >
-            <button
-              type="button"
-              onClick={() => setLightbox(null)}
-              aria-label="Fermer"
-              className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full border border-cream-50/30 font-sans text-xl text-cream-50 transition-colors hover:border-cream-50 sm:right-8 sm:top-8"
-            >
-              ×
-            </button>
-            <motion.div
-              initial={{ scale: 0.96, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.96, opacity: 0 }}
-              transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="relative flex max-h-full max-w-full flex-col items-center"
-              onClick={(event) => event.stopPropagation()}
-            >
-              <Image
-                src={lightbox.src}
-                alt={lightbox.alt}
-                width={lightbox.width}
-                height={lightbox.height}
-                sizes="92vw"
-                className="max-h-[80vh] max-w-[92vw] w-auto h-auto rounded-lg object-contain"
-              />
-              <p className="mt-4 max-w-lg text-center font-sans text-sm leading-relaxed text-cream-50/80">
-                {lightbox.caption}
-              </p>
-            </motion.div>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
     </div>
   );
 }
