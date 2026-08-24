@@ -4,7 +4,7 @@ import { MotionConfig } from "framer-motion";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TrustedBy from "@/components/home/TrustedBy";
-import { SITE } from "@/lib/content/site";
+import { SITE, CONTACT } from "@/lib/content/site";
 import "./globals.css";
 
 const newsreader = Newsreader({
@@ -24,13 +24,15 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} · Communication stratégique, créative et humaine`,
+    default: `${SITE.name} · Communication, community management & marketing à Agen`,
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,
   keywords: [
     "communication",
     "community management",
+    "community manager",
+    "marketing",
     "création graphique",
     "site internet",
     "print",
@@ -41,13 +43,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: SITE.locale,
     siteName: SITE.name,
-    title: `${SITE.name} · Communication stratégique, créative et humaine`,
+    title: `${SITE.name} · Communication, community management & marketing à Agen`,
     description: SITE.description,
     url: SITE.url,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} · Communication stratégique, créative et humaine`,
+    title: `${SITE.name} · Communication, community management & marketing à Agen`,
     description: SITE.description,
   },
   alternates: {
@@ -71,6 +73,7 @@ const jsonLd = {
     addressRegion: "Lot-et-Garonne",
     addressCountry: "FR",
   },
+  sameAs: [CONTACT.instagram, CONTACT.linkedin],
 };
 
 export default function RootLayout({

@@ -6,9 +6,9 @@ import CTAFinal from "@/components/home/CTAFinal";
 import ScrollLogo from "@/components/ui/ScrollLogo";
 
 export const metadata: Metadata = {
-  title: "Réalisations",
+  title: "Réalisations en communication et marketing",
   description:
-    "Découvrez les univers accompagnés par Mae Com'Unique : sport, bien-être, événementiel et bien d'autres, chacun avec sa propre direction créative.",
+    "Découvrez les univers accompagnés par Mae Com'Unique, agence de communication et community management à Agen : sport, bien-être, événementiel et bien d'autres, chacun avec sa propre direction créative.",
   alternates: { canonical: "/realisations" },
 };
 

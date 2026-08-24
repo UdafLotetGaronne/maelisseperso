@@ -9,7 +9,7 @@ export const SITE = {
   legalName: "Mae Com'Unique",
   baseline: "Votre communication. Mais vraiment la vôtre.",
   description:
-    "Mae Com'Unique accompagne les entreprises, indépendants, associations et commerces dans leur communication : réseaux sociaux, stratégie, création graphique, vidéo, web, print et emailing, pensés pour votre identité, pas une recette copiée-collée.",
+    "Mae Com'Unique, agence de communication et community management à Agen : réseaux sociaux, stratégie marketing, création graphique, vidéo, site web, print et emailing pour les entreprises, indépendants, associations et commerces du Lot-et-Garonne et d'ailleurs.",
   url: "https://maecomunique.com",
   locale: "fr_FR",
   areaServed: "Agen, Lot-et-Garonne (47), et à distance partout en France",

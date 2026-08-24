@@ -8,9 +8,9 @@ import ScrollLogo from "@/components/ui/ScrollLogo";
 import { CONTACT } from "@/lib/content/site";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact — communication & community management à Agen",
   description:
-    "Parlons de votre projet de communication : réseaux sociaux, création graphique, vidéo, web, print, SEO ou emailing.",
+    "Parlons de votre projet de communication, community management ou marketing : réseaux sociaux, création graphique, vidéo, web, print, SEO ou emailing.",
   alternates: { canonical: "/contact" },
 };
 

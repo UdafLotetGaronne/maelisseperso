@@ -10,9 +10,9 @@ import CTAFinal from "@/components/home/CTAFinal";
 import ScrollLogo from "@/components/ui/ScrollLogo";
 
 export const metadata: Metadata = {
-  title: "Prestations",
+  title: "Communication, community management & marketing",
   description:
-    "Réseaux sociaux, création graphique, vidéo, web, print, SEO, emailing et stratégie : découvrez l'ensemble des prestations de Mae Com'Unique.",
+    "Community management, réseaux sociaux, création graphique, vidéo, site web, print, SEO, emailing et stratégie marketing : découvrez l'ensemble des prestations de Mae Com'Unique, à Agen et à distance.",
   alternates: { canonical: "/services" },
 };
 
