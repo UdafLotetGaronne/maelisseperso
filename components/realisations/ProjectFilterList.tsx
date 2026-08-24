@@ -92,6 +92,13 @@ export default function ProjectFilterList() {
                 <p className="mt-5 max-w-xl pl-9 font-sans text-[15px] leading-relaxed text-green-950/70 sm:pl-[3.75rem]">
                   {project.description}
                 </p>
+                {project.remoteNote ? (
+                  <div className="mt-4 pl-9 sm:pl-[3.75rem]">
+                    <span className="inline-block rounded-full border border-rose-700/40 px-4 py-1.5 font-sans text-xs font-semibold uppercase tracking-[0.06em] text-rose-900">
+                      {project.remoteNote}
+                    </span>
+                  </div>
+                ) : null}
                 {project.website ? (
                   <div className="mt-4 flex max-w-2xl justify-end pl-9 sm:pl-[3.75rem]">
                     <a

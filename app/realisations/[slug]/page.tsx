@@ -90,6 +90,12 @@ export default async function ProjectPage({
               {project.description}
             </p>
 
+            {project.remoteNote ? (
+              <span className="mt-5 inline-block rounded-full border border-rose-700/40 px-4 py-1.5 font-sans text-xs font-semibold uppercase tracking-[0.06em] text-rose-900">
+                {project.remoteNote}
+              </span>
+            ) : null}
+
             <div className="mt-8 flex flex-wrap items-center gap-4">
               {project.website ? (
                 <a

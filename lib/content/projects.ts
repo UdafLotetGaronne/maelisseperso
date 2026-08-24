@@ -31,6 +31,7 @@ export type Project = {
   media?: ProjectMedia[];
   website?: string;
   instagramHandle?: string;
+  remoteNote?: string;
 };
 
 export const PROJECTS: Project[] = [
@@ -41,8 +42,9 @@ export const PROJECTS: Project[] = [
     missions: "Social media · site web · SEO · emailing",
     categories: ["social-media", "web"],
     description:
-      "Une communication plus douce et pédagogique, à l'opposé de l'énergie d'une salle de sport : site web, référencement et emailing pour accompagner la relation client dans la durée. Institut NG est une entreprise canadienne, accompagnée entièrement à distance.",
+      "Une communication plus douce et pédagogique, à l'opposé de l'énergie d'une salle de sport : site web, référencement et emailing pour accompagner la relation client dans la durée.",
     website: "https://nouveauxgenres.com/",
+    remoteNote: "Entreprise canadienne, accompagnée entièrement à distance",
     media: [
       {
         src: "/images/realisations/institut-ng-1.webp",
