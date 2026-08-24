@@ -2,7 +2,7 @@ export const FAQ_ITEMS = [
   {
     question: "Est-ce que vous travaillez uniquement à Agen, ou aussi à distance ?",
     answer:
-      "Les deux. Je suis basée à Agen et j'aime bien les rendez-vous en personne quand c'est possible, mais une bonne partie de mes clients sont accompagnés entièrement à distance, partout en France (j'ai même une cliente au Canada). Tout se passe très bien en visio et par mail.",
+      "Les deux. Je suis basée à Agen et j'aime bien les rendez-vous en personne quand c'est possible, mais une bonne partie de mes clients sont accompagnés entièrement à distance, partout en France (j'ai même des clients en Suisse et au Canada). Tout se passe très bien en visio et par mail.",
   },
   {
     question: "Combien de temps faut-il pour créer un site internet ?",
@@ -12,7 +12,7 @@ export const FAQ_ITEMS = [
   {
     question: "Quel budget dois-je prévoir ?",
     answer:
-      "Ça varie beaucoup selon ce dont vous avez besoin : un accompagnement social media n'a rien à voir avec la création d'un site complet. Le plus simple, c'est qu'on en parle directement — je vous fais une proposition sur-mesure après avoir compris votre projet, pas un tarif générique qui ne correspond à rien.",
+      "Ça varie beaucoup selon ce dont vous avez besoin : un accompagnement social media n'a rien à voir avec la création d'un site complet. Le plus simple, c'est qu'on en parle directement, je vous fais une proposition sur-mesure après avoir compris votre projet.",
   },
   {
     question: "Je ne sais pas exactement ce dont j'ai besoin, c'est un problème ?",
@@ -32,11 +32,11 @@ export const FAQ_ITEMS = [
   {
     question: "Comment se passe le début d'une collaboration ?",
     answer:
-      "On commence toujours par un échange (téléphone, visio ou en personne) pour que je comprenne votre activité, vos objectifs et ce que vous avez déjà en tête. Ensuite je vous propose une façon de travailler ensemble, avec un budget clair, et on démarre quand vous êtes prête.",
+      "On commence toujours par un échange (téléphone, visio ou en personne) pour que je comprenne votre activité, vos objectifs et ce que vous avez déjà en tête. Ensuite je vous propose une façon de travailler ensemble, avec un budget clair, et on démarre quand vous êtes prêt.",
   },
   {
     question: "Créez-vous vous-même les visuels et les contenus, ou juste la stratégie ?",
     answer:
-      "Je fais les deux. Je peux réfléchir à votre stratégie globale, mais je crée aussi concrètement les visuels, les textes, les vidéos... Vous n'avez pas besoin de jongler avec plusieurs prestataires différents.",
+      "Je fais les deux. Je peux réfléchir à votre stratégie globale, mais je crée aussi les visuels, les textes, les vidéos... Vous n'avez pas besoin de jongler avec plusieurs prestataires différents.",
   },
 ] as const;
