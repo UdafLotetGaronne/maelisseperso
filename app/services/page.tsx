@@ -1,13 +1,28 @@
 import type { Metadata } from "next";
 import { SERVICES } from "@/lib/content/services";
+import { FAQ_ITEMS } from "@/lib/content/faq";
 import Container from "@/components/ui/Container";
 import SectionEyebrow from "@/components/ui/SectionEyebrow";
 import Reveal from "@/components/ui/Reveal";
 import OrganicFrame from "@/components/ui/OrganicFrame";
 import ServicesSideNav from "@/components/services/ServicesSideNav";
 import ServiceSection from "@/components/services/ServiceSection";
+import FAQSection from "@/components/services/FAQSection";
 import CTAFinal from "@/components/home/CTAFinal";
 import ScrollLogo from "@/components/ui/ScrollLogo";
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_ITEMS.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
 
 export const metadata: Metadata = {
   title: "Communication, community management & marketing",
@@ -19,6 +34,10 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <section className="pb-16 pt-14 sm:pt-20 lg:pb-24">
         <Container>
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-8">
@@ -63,6 +82,8 @@ export default function ServicesPage() {
           </div>
         </Container>
       </section>
+
+      <FAQSection />
 
       <div className="mt-8">
         <CTAFinal />
