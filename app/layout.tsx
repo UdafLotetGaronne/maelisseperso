@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Newsreader, Manrope } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { MotionConfig } from "framer-motion";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -114,6 +115,7 @@ export default function RootLayout({
           <TrustedBy />
           <Footer />
         </MotionConfig>
+        <Analytics />
       </body>
     </html>
   );
