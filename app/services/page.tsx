@@ -12,7 +12,7 @@ import ScrollLogo from "@/components/ui/ScrollLogo";
 export const metadata: Metadata = {
   title: "Communication, community management & marketing",
   description:
-    "Community management, réseaux sociaux, création graphique, vidéo, site web, print, SEO, emailing et stratégie marketing : découvrez l'ensemble des prestations de Mae Com'Unique, à Agen et à distance.",
+    "Community management, réseaux sociaux, création graphique, vidéo, site web, print, SEO et emailing : les prestations de Mae Com'Unique, à Agen et à distance.",
   alternates: { canonical: "/services" },
 };
 

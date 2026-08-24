@@ -6,6 +6,16 @@ import Reveal from "@/components/ui/Reveal";
 import ProjectMediaGallery from "@/components/realisations/ProjectMediaGallery";
 import CTAFinal from "@/components/home/CTAFinal";
 import { PROJECTS, getProjectBySlug } from "@/lib/content/projects";
+import { SITE } from "@/lib/content/site";
+
+const DEFAULT_OG_IMAGE = { url: "/images/og-image.png", width: 1200, height: 630 };
+
+function truncate(text: string, max = 155) {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  const lastSpace = cut.lastIndexOf(" ");
+  return `${cut.slice(0, lastSpace)}…`;
+}
 
 export function generateStaticParams() {
   return PROJECTS.map((project) => ({ slug: project.slug }));
@@ -24,7 +34,10 @@ export async function generateMetadata({
   }
 
   const title = `${project.name} — ${project.sector}`;
-  const description = `${project.description} Communication et community management par Mae Com'Unique, à Agen et à distance.`;
+  const description = truncate(`${project.missions}. ${project.description}`);
+  const ogImage = project.media?.[0]
+    ? { url: project.media[0].src, width: project.media[0].width, height: project.media[0].height }
+    : DEFAULT_OG_IMAGE;
 
   return {
     title,
@@ -34,15 +47,13 @@ export async function generateMetadata({
       title,
       description,
       url: `/realisations/${project.slug}`,
-      images: project.media?.[0]
-        ? [{ url: project.media[0].src, width: project.media[0].width, height: project.media[0].height }]
-        : undefined,
+      images: [ogImage],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: project.media?.[0] ? [project.media[0].src] : undefined,
+      images: [ogImage.url],
     },
   };
 }
@@ -61,8 +72,22 @@ export default async function ProjectPage({
 
   const otherProjects = PROJECTS.filter((p) => p.slug !== project.slug);
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Accueil", item: SITE.url },
+      { "@type": "ListItem", position: 2, name: "Réalisations", item: `${SITE.url}/realisations` },
+      { "@type": "ListItem", position: 3, name: project.name, item: `${SITE.url}/realisations/${project.slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="pb-16 pt-14 sm:pt-20 lg:pb-24">
         <Container>
           <Reveal>

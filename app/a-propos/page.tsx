@@ -10,7 +10,7 @@ import ScrollLogo from "@/components/ui/ScrollLogo";
 export const metadata: Metadata = {
   title: "Agence de communication et community management à Agen",
   description:
-    "Maëlisse Le Berre, fondatrice de Mae Com'Unique, accompagne directement ses clients en communication, community management et marketing depuis Agen, en Lot-et-Garonne.",
+    "Maëlisse Le Berre, fondatrice de Mae Com'Unique, accompagne ses clients en communication, community management et marketing depuis Agen, en Lot-et-Garonne.",
   alternates: { canonical: "/a-propos" },
 };
 
